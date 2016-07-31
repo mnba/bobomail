@@ -1,0 +1,465 @@
+# DogMail German translation.
+# Copyright (C) 2000 
+# Henning Schröder <ich@henning-schroeder.de>, 2000
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BoboMail 0.3\n"
+"PO-Revision-Date: Wed Dec 20 02:16:53 2000\n"
+"Last-Translator: Cristiano Reis Monteiro <cristmon@ufba.br>\n"
+"Language-Team: Português Brasileiro (pt_BR)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8851-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 0.2-1\n"
+
+#: ../dtml/vcardpart.html:24
+msgid "Home"
+msgstr "Casa"
+
+#: ../dtml/compose.html:35
+msgid "File"
+msgstr "Arquivo"
+
+#: ../dtml/vcardpart.html:12
+msgid "Street"
+msgstr "Rua"
+
+#: ../dtml/mail.html:5 ../dtml/mail.html:26
+msgid "Reply to all"
+msgstr "Responder a todos"
+
+#: ../dtml/mail.html:7 ../dtml/mail.html:28
+msgid "Bounce"
+msgstr "Devolver"
+
+#: ../dtml/error.html:3 ../dtml/error.html:18
+msgid "Back"
+msgstr ""
+
+#: ../dtml/list.html:98
+msgid "messages"
+msgstr "mensagens"
+
+#: ../dtml/template.html:39
+#, fuzzy
+msgid "Addresses"
+msgstr "Endereço"
+
+#: ../dtml/addrs.html:26 ../dtml/mail.html:3 ../dtml/mail.html:24
+msgid "Delete"
+msgstr "Apagar"
+
+#: ../dtml/error.html:18 ../dtml/error.html:22 ../dtml/login.html:21
+#: ../dtml/login.html:25
+msgid "Login"
+msgstr "Login"
+
+#: ../dtml/list.html:71
+msgid "[multipart]"
+msgstr "[multiparte]"
+
+#: ../dtml/sent.html:15
+msgid "No problems occured while sending the message"
+msgstr "Nenhum problema ocorreu durante o envio da mensagem"
+
+#: ../dtml/addrs.html:14 ../dtml/compose.html:22 ../dtml/messagepart.html:49
+msgid "Bcc"
+msgstr "BCC"
+
+#: ../dtml/login.html:17
+msgid "Userid"
+msgstr "ID do usuário"
+
+#: ../dtml/vcardpart.html:25
+msgid "Work"
+msgstr "Trabalho"
+
+#: ../dtml/vcardpart.html:16
+msgid "Country"
+msgstr "País"
+
+#: ../dtml/sent.html:5
+msgid "Error-message"
+msgstr "Mensagem-de-erro"
+
+#: ../dtml/template.html:23
+msgid "About"
+msgstr "Sobre"
+
+#: ../dtml/vcardpart.html:30
+msgid "Pager"
+msgstr ""
+
+#: ../dtml/login.html:21
+msgid "Password"
+msgstr "Senha"
+
+#: ../dtml/sent.html:3
+msgid "There were problems with the following recipients"
+msgstr "Ocorreram problemas com os seguintes destinatários"
+
+#: ../dtml/sent.html:5
+msgid "Address"
+msgstr "Endereço"
+
+#: ../dtml/list.html:56
+msgid "Size"
+msgstr "Tamanho"
+
+#: ../dtml/template.html:36
+#, fuzzy
+msgid "Mailbox"
+msgstr "Cliente de mail"
+
+#: ../dtml/imagepart.html:1 ../dtml/imagepart.html:4
+msgid "Picture"
+msgstr "Imagem"
+
+#: ../dtml/list.html:98 ../dtml/list.html:99
+msgid "Delete selected messages"
+msgstr "Deletar mensagens selecionadas"
+
+#: ../dtml/addrs.html:26 ../dtml/addrs.html:32
+#, fuzzy
+msgid "Send mail"
+msgstr "Mensagens enviadas"
+
+#: ../dtml/about.html:19
+msgid "Distributed under GNU General Public License"
+msgstr "Distribuído sob a licensa GNU"
+
+#: ../dtml/messagepart.html:7
+msgid "Mailer"
+msgstr "Cliente de mail"
+
+#: ../dtml/addrs.html:63 ../dtml/addrs.html:69 ../dtml/messagepart.html:28
+#: ../dtml/vcardpart.html:35 ../dtml/vcardpart.html:45
+msgid "Add to address book"
+msgstr "Adicionar ao livro de endereços"
+
+#: ../dtml/addrs.html:16 ../dtml/addrs.html:63 ../dtml/vcardpart.html:32
+msgid "Email"
+msgstr "E-Mail"
+
+#: ../dtml/about.html:4
+#, fuzzy
+msgid "Homepage"
+msgstr "Casa"
+
+#: ../dtml/list.html:21
+msgid "Click on the column header for the sort order. And again to reverse."
+msgstr ""
+"Clique no cabecalho da coluna para ordenar, clique novamente para inverter"
+
+#: ../dtml/mail.html:4 ../dtml/mail.html:25
+msgid "Reply"
+msgstr "Responder"
+
+#: ../dtml/login.html:4
+msgid "Please authenticate yourself"
+msgstr "Por favor autentique-se"
+
+#: ../dtml/about.html:8
+msgid "Mailing list"
+msgstr "Lista de distribuição"
+
+#: ../dtml/list.html:105
+msgid "Sorry. You have no mail :-("
+msgstr "Sinto. Você não tem mensagens :-("
+
+#: ../dtml/prefs.html:15
+msgid "Full name:"
+msgstr "Nome:"
+
+#: ../dtml/vcardpart.html:15
+msgid "State"
+msgstr "Estado"
+
+#: ../dtml/addrs.html:12 ../dtml/bounce.html:15 ../dtml/compose.html:11
+#: ../dtml/messagepart.html:33
+msgid "To"
+msgstr "Para"
+
+#: ../dtml/list.html:90
+msgid "Next"
+msgstr "Próximas"
+
+#: ../dtml/bounce.html:15 ../dtml/bounce.html:19
+#, fuzzy
+msgid "Send"
+msgstr "Enviar"
+
+#: ../dtml/mimepart.html:9
+msgid "Click to download"
+msgstr "Clique para efetuar o download"
+
+#: ../dtml/list.html:56 ../dtml/list.html:67 ../dtml/messagepart.html:61
+#: ../dtml/messagepart.html:64
+msgid "(no subject)"
+msgstr "(sem assunto)"
+
+#: ../dtml/prefs.html:28
+msgid "View attached images inside the page"
+msgstr "Ver imagens anexadas dentro da página"
+
+#: ../dtml/template.html:43
+msgid "Preferences"
+msgstr "Preferências"
+
+#: ../dtml/messagepart.html:24
+msgid "From"
+msgstr "De"
+
+#: ../mimeviewer.py:75 ../mimeviewer.py:78
+msgid "(no body)"
+msgstr "(sem texto)"
+
+#: ../dtml/vcardpart.html:14
+msgid "City"
+msgstr "Cidade"
+
+#: ../dtml/compose.html:26 ../dtml/list.html:43 ../dtml/messagepart.html:61
+msgid "Subject"
+msgstr "Assunto"
+
+#: ../dtml/about.html:6
+msgid "Bug tracking"
+msgstr "Caça a erros"
+
+#: ../dtml/mail.html:17
+msgid "View raw message"
+msgstr "Ver mensagem crua"
+
+#: ../dtml/about.html:20
+msgid "for details."
+msgstr "para detalhes."
+
+#: ../dtml/about.html:5
+msgid "Project-Page"
+msgstr "Página do projeto"
+
+#: ../dtml/addrs.html:13 ../dtml/compose.html:18 ../dtml/messagepart.html:39
+msgid "Cc"
+msgstr "CC"
+
+#: ../dtml/compose.html:35 ../dtml/compose.html:39
+msgid "Send message"
+msgstr "Enviar mensagem"
+
+#: ../dtml/template.html:26
+msgid "Help"
+msgstr "Ajuda"
+
+#: ../dtml/sent.html:5
+msgid "Code"
+msgstr "Código"
+
+#: ../dtml/list.html:31
+msgid "Previous"
+msgstr "Anteriores"
+
+#: ../dtml/vcardpart.html:22
+msgid "Telephone"
+msgstr "Telefone"
+
+#: ../dtml/vcardpart.html:26
+msgid "Mobile"
+msgstr "Celular"
+
+#: ../dtml/vcardpart.html:35
+msgid "URL"
+msgstr ""
+
+#: ../dtml/vcardpart.html:13
+msgid "ZIP"
+msgstr "CEP"
+
+#: ../dtml/list.html:48
+msgid "Sender"
+msgstr "Remetente"
+
+#: ../dtml/prefs.html:32 ../dtml/prefs.html:46
+msgid "Save changes"
+msgstr "Salvar alterações"
+
+#: ../dtml/list.html:52 ../dtml/messagepart.html:16
+msgid "Date"
+msgstr "Data"
+
+#: ../dtml/template.html:47
+msgid "Logout"
+msgstr "Sair"
+
+#: ../dtml/login.html:12
+msgid "Host"
+msgstr "Servidor"
+
+#: ../dtml/template.html:33
+#, fuzzy
+msgid "New message"
+msgstr "Nova mensagem"
+
+#: ../dtml/mimepart.html:6
+msgid "MIME-type"
+msgstr "Tipo-MIME"
+
+#: ../dtml/about.html:20
+msgid "Look at"
+msgstr "Olhe em"
+
+#: ../dtml/prefs.html:22
+msgid "Signature:"
+msgstr "Assinatura:"
+
+#: ../dtml/sent.html:20
+msgid "Return to inbox"
+msgstr "Voltar à caixa de entrada"
+
+#: ../dtml/list.html:70
+msgid "[new]"
+msgstr "[nova]"
+
+#: ../dtml/vcardpart.html:29
+msgid "Fax"
+msgstr ""
+
+#: ../dtml/mail.html:15
+msgid "View raw headers"
+msgstr "Ver cabeçalho completo"
+
+#: ../dtml/mail.html:6 ../dtml/mail.html:27
+msgid "Forward"
+msgstr "Avançar"
+
+#: ../dtml/error.html:3
+msgid "Unfortunately, an error occured"
+msgstr "Infelizmente, ocorreu um erro :("
+
+#: ../dtml/mimepart.html:5
+msgid "Attachment"
+msgstr "Anexo"
+
+#: ../dtml/list.html:20
+msgid "To reply click on the sender and click on the subject to read."
+msgstr "Para responder clique no remetente. Clique no assunto para ler."
+
+#: ../dtml/mimepart.html:7
+msgid "Filename"
+msgstr "Nome do arquivo"
+
+#: ../dtml/about.html:10
+msgid "You are using BoboMail version"
+msgstr "Você está usando Bobomail versão"
+
+#: ../dtml/prefs.html:32
+msgid "Messages per page:"
+msgstr "Mensagens por página"
+
+#: ../dtml/list.html:71 ../dtml/list.html:78
+msgid "(no date)"
+msgstr "(sem data)"
+
+#: ../dtml/addrs.html:15 ../dtml/addrs.html:60 ../dtml/vcardpart.html:11
+msgid "Name"
+msgstr "Nome"
+
+#: ../dtml/vcardpart.html:10
+msgid "Title"
+msgstr "Título"
+
+#: ../dtml/about.html:7
+msgid "Patch manager"
+msgstr "Gerenciador de correções"
+
+msgid "Message bounced"
+msgstr "Mensagem devolvida"
+
+msgid ""
+"Authentication failed. Please check your userid and password and try to "
+"login again."
+msgstr ""
+"Falha na autenticação. Por favor verifique seu login e senha e tente logar "
+"novamente"
+
+#, fuzzy
+msgid "Address book"
+msgstr "Endereço"
+
+msgid "Welcome! You successfully logged in"
+msgstr "Bem-vindo ! Seu login foi efetuado com sucesso"
+
+msgid "Compose new message"
+msgstr "Compor nova mensagem"
+
+msgid "Forward message"
+msgstr "Avançar mensagem"
+
+msgid "Message sent without any problems"
+msgstr "Mensagem enviada sem problemas"
+
+#, fuzzy
+msgid "Or maybe your session has expired"
+msgstr "Ou talvez sua sessão tenha expirado"
+
+msgid "Read message"
+msgstr "Ler mensagem"
+
+msgid "Reply to message"
+msgstr "Responder à mensagem"
+
+msgid "Selected message(s) deleted"
+msgstr "Mensagen(s) selecionada(s) apagada(s)"
+
+msgid "List inbox for %s"
+msgstr "Caixa de entrada para %s"
+
+msgid "Fwd: %s - %s"
+msgstr "Enc: %s - %s"
+
+msgid "Error"
+msgstr "Erro"
+
+msgid "Only loosers and communists need help (Weird Al Yankovic)"
+msgstr "Ajuda não disponível no momento"
+
+#, fuzzy
+msgid "E-Mail"
+msgstr "E-Mail"
+
+msgid "Preferences changed"
+msgstr "Preferências modificadas"
+
+#, fuzzy
+msgid "Bounce message"
+msgstr "Ler mensagem"
+
+msgid "Sent mail"
+msgstr "Mensagens enviadas"
+
+msgid "[new] "
+msgstr "[nova]"
+
+msgid "List inbox"
+msgstr "Caixa de entrada"
+
+msgid "Please correct this. To see the error, just execute bobomailrc.py"
+msgstr "Por favor corrija isto. Para ver o erro, execute bobomailrc.py"
+
+msgid "You made a syntax error in your configuration file bobomailrc.py"
+msgstr "Você cometeu um erro de configuração em seu arquivo bobomailrc.py"
+
+msgid "[multipart] "
+msgstr "[multiparte]"
+
+msgid "this way:"
+msgstr "desta maneira:"
+
+msgid "Currently sorted by %(by)s"
+msgstr "Atualmente ordenado por %(by)s"
+
+msgid "Engage!"
+msgstr "Habilite!"
+
+msgid "Beam me up!"
+msgstr "Um para subir!"

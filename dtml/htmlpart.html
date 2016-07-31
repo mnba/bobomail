@@ -1,0 +1,9 @@
+
+  <dtml-with mail>
+  <tt><dtml-var title null></tt>
+  <table border="0" width="100%" <dtml-if background>background="<dtml-var background>"</dtml-if>
+	<dtml-if bgcolor>bgcolor="<dtml-var bgcolor>"</dtml-if>
+	<dtml-if fgcolor>fgcolor="<dtml-var fgcolor>"</dtml-if>>
+	<tr><td><dtml-var data></td></tr>
+  </table>
+  </dtml-with>

@@ -1,0 +1,67 @@
+93c93
+< __version__ = '0.2'
+---
+> __version__ = '0.2-1'
+169a170,224
+> 
+> 
+> try: from cStringIO import StringIO
+> except: from StringIO import StringIO
+> from string import find, split
+> from sgmllib import SGMLParser
+> 
+> 
+> class I18NParser(SGMLParser):
+> 
+> 	gettext_tags = ["dtml-gettext", "dtml-gt"]
+> 
+> 	def __init__(self):
+> 		SGMLParser.__init__(self)
+> 		self.data = ""
+> 		self.messages = []
+> 		self.startpos = 0
+> 		
+> 	def unknown_starttag(self, tag, attrs):
+> 	    for k, v in attrs:
+> 		for t in self.gettext_tags:
+> 		    if find(v, t):
+> 			p = I18NParser()
+> 			p.feed(v)
+> 			if p.messages: self.messages.extend(p.messages)
+> 			break
+> 	    if tag in self.gettext_tags:
+> 		self.data = ""
+> 
+> 	def unknown_endtag(self, tag):
+> 		if tag in self.gettext_tags:
+> 			f = find(self.rawdata, self.data, self.startpos)
+> 			row = len(split(self.rawdata[:f], "\n"))
+> 			self.messages.append((self.data, row))
+> 			self.startpos = f + 1
+> 			self.data = ""
+> 
+> 	def handle_entityref(self, name): self.handle_data("&%s;" % name)
+> 	def handle_charref(self, name): self.handle_data("&#%s;" % name)
+> 	def handle_comment(self, data): self.handle_data("<!--%s-->" % data)
+> 	def handle_data(self, data): self.data = self.data + data
+> 
+> 
+> def htmlfilter(fp):
+>     buf, row = "", 1
+>     p = I18NParser()
+>     p.feed(fp.read())
+>     for msg, lineno in p.messages:
+> 	while row < lineno:
+> 	    buf = buf + "\n"
+> 	    row = row + 1
+> 	buf = buf + '_("%s"); ' % msg
+>     return StringIO(buf)
+> 
+> 
+300c355,358
+<         fp = open(filename)
+---
+> 	ext = os.path.splitext(filename)[1]
+> 	if ext in [".htm", ".html"]:
+> 	    fp = htmlfilter(open(filename))
+> 	else: fp = open(filename)

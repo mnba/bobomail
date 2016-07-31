@@ -1,0 +1,21 @@
+
+
+    <table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0" width="80%"> 
+      <tr>
+        <td>
+          <table align="center" border="0" bgcolor="#eeeeee" cellpadding="10" cellspacing="0" width="100%">
+	    <tr>
+              <td class="ssb">Name</td>
+	      <td class="ssb">Adresse</td>
+            </tr>
+	    <dtml-in users sort=name>
+	      <tr>
+		<td class="ss"><dtml-var name html_quote null="<i>(unbenannt)</i>"></td>
+	       <td class="ss">&lt;<a href="Compose?To=<dtml-var email url_quote>"><dtml-var email></a>&gt;</td>
+	      </tr>
+            </dtml-in>
+          </table>
+        </td>
+      </tr>
+    </table>
+

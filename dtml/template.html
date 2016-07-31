@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/tr/REC-html40/loose.dtd">
+<html>
+ <head>
+    <link rel="stylesheet" href="<dtml-var imagedir>/bobomail.css">
+    <style><!--
+      A {text-decoration: none}
+      a:hover { text-decoration: underline;  color: #cc0000}
+      -->
+    </style>
+    <meta http-equiv="pragma" content="no-cache">
+    <title>BoboMail: <dtml-var title></title>
+ </head>
+
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff">
+
+   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tr>
+    <td width="10" bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif" align="center">&nbsp;</td>
+    <td  bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif" valign="top" width="165">
+      <img src="<dtml-var imagedir>/logo-trans.gif">
+    </td>
+    <td bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif" valign="TOP" align="left" width="100%">
+      <h2><font color="white"><dtml-var title null="&nbsp;"></font></h2>
+    </td>
+
+    <td width="10" bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif" align="right" valign="bottom"><img src="<dtml-var imagedir>/border1.gif" width="14" HEIGHT="20" border="0"></td>
+   </tr>
+
+   <tr>
+    <td width="10" bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif">&nbsp;</td>
+
+    <td width="150" bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif" valign=TOP>
+
+                 <dtml-if cgi>
+			  <p>
+				<a href="<dtml-var cgi>/About"><font 
+				    color="white"><dtml-gt>About</dtml-gt></font></a>
+				<!--<br>
+				<a href="<dtml-var cgi>/Help"><font 
+			            color="white"><dtml-gt>Help</dtml-gt></font></a>-->
+			  </p>
+			  
+			  <dtml-if loggedin><br><br> 
+					<p>
+					  <a href="<dtml-var cgi>/MailBox/Compose"><font 
+						 color="white"><b><dtml-gt>New message</dtml-gt></b></font></a>
+					  <br><br>
+					  <a href="<dtml-var cgi>/MailBox/index_html"><font 
+					         color="white"><b><dtml-gt>Mailbox</dtml-gt></b></font></a>
+					  <br><br>
+					  <a href="<dtml-var cgi>/AddrBook/index_html"><font 
+					         color="white"><b><dtml-gt>Addresses</dtml-gt></b></font></a>
+					</p>
+					<p>
+					  <a href="<dtml-var cgi>/Prefs/index_html"><font 
+				                 color="white"><b><dtml-gt>Preferences</dtml-gt></b></font></a>
+					</p>
+					<br>
+					<p>
+					  <a href="<dtml-var cgi>/Logout"><font 
+						 color="white"><b><dtml-gt>Logout</dtml-gt></b></font></a>
+					</p>
+		      </dtml-if>
+           <dtml-else>
+           %(panel)s
+           </dtml-if>
+
+    </td>
+    <td valign="top" rowspan="3">
+	   <table border="0" cellpadding="10"><tr><td>%(body)s</td></tr></table>
+    </td>
+    <td width="10" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10" bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif"align="center">&nbsp;</td>
+    <td width="150" bgcolor="#389090" background="<dtml-var imagedir>/backgr.gif" align="right" valign="bottom"><img src="<dtml-var imagedir>/border2.gif" width="142" height="20" border="0" ALT=""></td>
+    <!--<td align="center">&nbsp;</td>-->
+    <td width="10" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td width="150"><!-- Below -->&nbsp;</td>
+    <!--<td>&nbsp;</td>-->
+    <td width="10">&nbsp;</td>
+  </tr>
+ </table>
+ <!-- Bottom -->
+ 
+</BODY>
+</HTML>

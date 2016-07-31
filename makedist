@@ -1,0 +1,8 @@
+#!/bin/sh
+fgrep DEBUG bobomailrc.py |grep true && (echo DEBUG ist gesetzt. Abbruch; exit 1)
+export VERSION=$(python -c "import defaults; print defaults.__version__")
+export PACKAGE=/tmp/bobomail-$VERSION.tar.gz
+cd ..
+tar czvf $PACKAGE bobomail 
+cd bobomail
+echo $PACKAGE created

@@ -1,0 +1,17 @@
+/.cvsignore/1.1.1.1/Sun Feb 25 14:30:00 2001//
+/Makefile.in/1.1.1.1/Sun Feb 25 14:30:02 2001//
+/README/1.1.1.1/Sun Feb 25 14:30:02 2001//
+/config.h.in/1.1.1.1/Sun Feb 25 14:30:02 2001//
+/configure/1.1.1.1/Sun Feb 25 14:30:14 2001//
+/configure.in/1.1.1.1/Sun Feb 25 14:30:15 2001//
+/install-sh/1.1.1.1/Sun Feb 25 14:30:15 2001//
+/manifest/1.1.1.1/Sun Feb 25 14:30:15 2001//
+/parseinfo.c/1.1.1.1/Sun Feb 25 14:30:21 2001//
+/pcgi-wrapper.c/1.1.1.1/Sun Feb 25 14:30:27 2001//
+/pcgi.h/1.1.1.1/Sun Feb 25 14:30:29 2001//
+/pcgi_publisher.py/1.1.1.1/Sun Feb 25 14:30:33 2001//
+D/Example////
+D/MrCreosote////
+D/Test////
+D/Util////
+D/Win32////

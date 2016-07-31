@@ -1,0 +1,76 @@
+About BoboMail
+
+BoboMail is a so called webmail application, which provides mail access 
+through a web interface. 
+
+It is distributed under the GNU GPL. See COPYING in the package
+or go to http://www.gnu.org for details.
+
+Current features:
+
+* read, write, reply, forward, delete and bounce messages
+
+* send and receive attachments
+
+* decodes quoted-printable, base64 and uuencoded
+
+* handles HTML-mails properly (with inline images!)
+
+* does not need Javascript
+
+* direct support for the following MIME types:
+  message/rfc822, message/delivery-status, multipart/alternative,
+  multipart/mixed, multipart/report, multipart/related, 
+  multipart/digest, text/plain, text/html, text/x-vcard, image/jpeg, 
+  text/rfc822-headers, image/png, image/x-xpixmap, image/gif
+
+* works with POP3-servers and partially IMAP4 (spool-files under development)
+
+* easy to modify and customize through HTML-templates
+
+* modular design provides easy interface for other authentication
+  methods and mail protocols
+
+* provides optionally its own fast multithreading webserver (BoboMailHTTPD)
+
+* multi-lingual support (i18n) - currently English, Brazilian Portuguese,
+  Finish, Spanish and German
+
+* and it's 100% Python :-)
+
+The first version of BoboMail was used for about a year and a half in the 
+intranet of the Computer Club Ostfriesland (one of Germany's largest computer
+clubs, see http://www.cco-ev.de if you understand German). I wrote my own
+webmailer, because at that time only some Perl scripts were available,
+which were not easy to customize (e.g. German interface).
+
+BTW: The name comes from Bobo - the former name of ZPublisher (the cgi
+framework I use). If you have a better/cooler idea for a name let me know!
+
+I hope you will find BoboMail usefull. Please send complaints (e.g. spelling 
+mistakes), criticism, security advices, suggestions, praises and everything 
+else to ich@henning-schroeder.de or visit me (Henning) on my personal webpage
+at http://www.henning-schroeder.de/en
+
+
+Important acknowledgement:
+This product includes software developed by Digital Creations
+for use in the Z Object Publishing Environment (htt://www.zope.org).
+
+The BoboMail distribution contains Zope's ZPublisher and ZTemplates. These
+compoments underly the Zope Public License (ZPL). They are packages with
+BoboMail for easier installation.
+
+
+BoboMail is hosted at Sourceforge (http://sourceforge.net). If you are
+interested in BoboMail development please visit the its webpage at
+http://bobomail.sourceforge.net
+
+
+Besides I want to make BoboMail even more modular so that my stuff can
+be used for a mailinglist archiver or a web-forum.
+
+
+Attention: I really would like to know where you will use BoboMail. Please
+tell me your success stories :-)
+

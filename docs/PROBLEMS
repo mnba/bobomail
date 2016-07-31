@@ -1,0 +1,54 @@
+Problems
+
+
+On some systems an authentication error occured although the userid and
+the password were right. This was caused by a buggy dumbdbm.py which was
+shipped with Python 1.5.2. This distribution new contains a newer version.
+
+
+Some people tried to run BoboMail with Python 1.5.1 or lower. Therefore you 
+have to patch ZPublisher. (Not really recommended)
+
+ In Publish.py replace
+   outputBody=getattr(response, 'outputBody', None)
+ with
+   try: outputBody=getattr(response, 'outputBody')
+   except: outputBody=None
+ and
+   error_hook=getattr(module,'zpublisher_exception_hook', None)
+ with
+   try: error_hook=getattr(module,'zpublisher_exception_hook')
+   except: error_hook=None
+
+
+There was one problem with the permissions in release 0.3: 
+
+ The error message "module main not found" means that the
+ webserver can't read the file main.py. chmod +r should fix this.
+
+
+If you have any other problems, mail me and I will try to help you.
+
+
+I have testetd BoboMail on the following system:
+
+ * RedHat 6.2
+
+ * SuSE 6.0
+
+ * Linux 2.2.15
+
+ * Python 1.5.2
+
+ * Apache 1.3.11, Apache 1.3.12
+
+ * Mozilla M15/
+   Netscape Navigator 4.7
+
+ * OpenBSD 2.7
+
+
+
+If you see Zope-Error messages look into the html source for a Python
+traceback to see what went wrong (e.g. import errors occure when the 
+directories are wrong). If you don't understand them mail me the page.

@@ -1,0 +1,423 @@
+# Bobomail Finnish translation
+# Copyright (C) 2000 Markku Yli-Pentilä <markkuyp@kauhajoki.fi>
+# FIRST AUTHOR <markkuyp@kauhajoki.fi>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: boboMail 0.4\n"
+"PO-Revision-Date: Sun Dec 17 03:33:23 2000\n"
+"Last-Translator: Markku Yli-Pentilä <markkuyp@kauhajoki.fi>\n"
+"Language-Team: Finnish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 0.2-1\n"
+
+#: ../dtml/vcardpart.html:24
+msgid "Home"
+msgstr "Koti"
+
+#: ../dtml/compose.html:35
+msgid "File"
+msgstr "Tiedosto"
+
+#: ../dtml/vcardpart.html:12
+msgid "Street"
+msgstr "Katu"
+
+#: ../dtml/mail.html:5 ../dtml/mail.html:26
+msgid "Reply to all"
+msgstr "Vastataanko kaikille"
+
+#: ../dtml/mail.html:7 ../dtml/mail.html:28
+msgid "Bounce"
+msgstr ""
+
+#: ../dtml/error.html:3 ../dtml/error.html:18
+msgid "Back"
+msgstr ""
+
+#: ../dtml/list.html:98
+msgid "messages"
+msgstr "Viestiä"
+
+#: ../dtml/template.html:39
+msgid "Addresses"
+msgstr "osoitetta"
+
+#: ../dtml/addrs.html:26 ../dtml/mail.html:3 ../dtml/mail.html:24
+msgid "Delete"
+msgstr "Poista"
+
+#: ../dtml/error.html:18 ../dtml/error.html:22 ../dtml/login.html:21
+#: ../dtml/login.html:25
+msgid "Login"
+msgstr "Kirjaudu sisään"
+
+#: ../dtml/list.html:71
+msgid "[multipart]"
+msgstr ""
+
+#: ../dtml/sent.html:15
+msgid "No problems occured while sending the message"
+msgstr "Viesti lähetetty ilman minkäänlaisia ongelmia"
+
+#: ../dtml/addrs.html:14 ../dtml/compose.html:22 ../dtml/messagepart.html:49
+msgid "Bcc"
+msgstr ""
+
+#: ../dtml/login.html:17
+msgid "Userid"
+msgstr "Käyttäjätunnus"
+
+#: ../dtml/vcardpart.html:25
+msgid "Work"
+msgstr "Työ"
+
+#: ../dtml/vcardpart.html:16
+msgid "Country"
+msgstr "Maa"
+
+#: ../dtml/sent.html:5
+msgid "Error-message"
+msgstr "virheilmoitus"
+
+#: ../dtml/template.html:23
+msgid "About"
+msgstr "Tietoa ohlemistosta"
+
+#: ../dtml/vcardpart.html:30
+msgid "Pager"
+msgstr "hakulaite"
+
+#: ../dtml/login.html:21
+msgid "Password"
+msgstr "Salasana"
+
+#: ../dtml/sent.html:3
+msgid "There were problems with the following recipients"
+msgstr "Seuraavien vastaanottajien suhteen ilmeni ongelmia"
+
+#: ../dtml/sent.html:5
+msgid "Address"
+msgstr "Osoite"
+
+#: ../dtml/list.html:56
+msgid "Size"
+msgstr "koko"
+
+#: ../dtml/template.html:36
+msgid "Mailbox"
+msgstr "postilaatikko"
+
+#: ../dtml/imagepart.html:1 ../dtml/imagepart.html:4
+msgid "Picture"
+msgstr "Kuva"
+
+#: ../dtml/list.html:98 ../dtml/list.html:99
+msgid "Delete selected messages"
+msgstr "Poistetaanko valitut viestit"
+
+#: ../dtml/addrs.html:26 ../dtml/addrs.html:32
+msgid "Send mail"
+msgstr "Lähetä postia"
+
+#: ../dtml/about.html:19
+msgid "Distributed under GNU General Public License"
+msgstr ""
+
+#: ../dtml/messagepart.html:7
+msgid "Mailer"
+msgstr ""
+
+#: ../dtml/addrs.html:63 ../dtml/addrs.html:69 ../dtml/messagepart.html:28
+#: ../dtml/vcardpart.html:35 ../dtml/vcardpart.html:45
+msgid "Add to address book"
+msgstr "Lisätäänkö osoitekirjaan"
+
+#: ../dtml/addrs.html:16 ../dtml/addrs.html:63 ../dtml/vcardpart.html:32
+msgid "Email"
+msgstr "sähköposti"
+
+#: ../dtml/about.html:4
+msgid "Homepage"
+msgstr "kotisivu"
+
+#: ../dtml/list.html:21
+msgid "Click on the column header for the sort order. And again to reverse."
+msgstr ""
+
+#: ../dtml/mail.html:4 ../dtml/mail.html:25
+msgid "Reply"
+msgstr "Vastaa"
+
+#: ../dtml/login.html:4
+msgid "Please authenticate yourself"
+msgstr "Ole hyvä ja kirjaudu sisän"
+
+#: ../dtml/about.html:8
+msgid "Mailing list"
+msgstr "postituslista"
+
+#: ../dtml/list.html:105
+msgid "Sorry. You have no mail :-("
+msgstr "Valitettavasti sinulla ei ole postia ;-("
+
+#: ../dtml/prefs.html:15
+msgid "Full name:"
+msgstr "Koko nimi:"
+
+#: ../dtml/vcardpart.html:15
+msgid "State"
+msgstr "Osavaltio"
+
+#: ../dtml/addrs.html:12 ../dtml/bounce.html:15 ../dtml/compose.html:11
+#: ../dtml/messagepart.html:33
+msgid "To"
+msgstr "vastaanottaja"
+
+#: ../dtml/list.html:90
+msgid "Next"
+msgstr "Seuraava"
+
+#: ../dtml/bounce.html:15 ../dtml/bounce.html:19
+msgid "Send"
+msgstr "Lähetä"
+
+#: ../dtml/mimepart.html:9
+msgid "Click to download"
+msgstr "Klikkaa tästä hakeaksesi tiedoston"
+
+#: ../dtml/list.html:56 ../dtml/list.html:67 ../dtml/messagepart.html:61
+#: ../dtml/messagepart.html:64
+msgid "(no subject)"
+msgstr "(ei otsikkoa)"
+
+#: ../dtml/prefs.html:28
+msgid "View attached images inside the page"
+msgstr "Näytetäänkö liitteenäolevat kuvat sivun sisällä"
+
+#: ../dtml/template.html:43
+msgid "Preferences"
+msgstr ""
+
+#: ../dtml/messagepart.html:24
+msgid "From"
+msgstr "Lähettäjä"
+
+#: ../mimeviewer.py:75 ../mimeviewer.py:78
+msgid "(no body)"
+msgstr "(viesti on tyhjä)"
+
+#: ../dtml/vcardpart.html:14
+msgid "City"
+msgstr "Kaupunki"
+
+#: ../dtml/compose.html:26 ../dtml/list.html:43 ../dtml/messagepart.html:61
+msgid "Subject"
+msgstr "Otsikko"
+
+#: ../dtml/about.html:6
+msgid "Bug tracking"
+msgstr "Virheenetsintä"
+
+#: ../dtml/mail.html:17
+msgid "View raw message"
+msgstr "näytetäänkö 'raaka' viesti"
+
+#: ../dtml/about.html:20
+msgid "for details."
+msgstr "saadaksesi enemmän yksityiskohtia"
+
+#: ../dtml/about.html:5
+msgid "Project-Page"
+msgstr "projektin kotisivu"
+
+#: ../dtml/addrs.html:13 ../dtml/compose.html:18 ../dtml/messagepart.html:39
+msgid "Cc"
+msgstr ""
+
+#: ../dtml/compose.html:35 ../dtml/compose.html:39
+msgid "Send message"
+msgstr "lähetä viesti"
+
+#: ../dtml/template.html:26
+msgid "Help"
+msgstr "apua"
+
+#: ../dtml/sent.html:5
+msgid "Code"
+msgstr "koodi"
+
+#: ../dtml/list.html:31
+msgid "Previous"
+msgstr "edellinen"
+
+#: ../dtml/vcardpart.html:22
+msgid "Telephone"
+msgstr "puhelin"
+
+#: ../dtml/vcardpart.html:26
+msgid "Mobile"
+msgstr "matka"
+
+#: ../dtml/vcardpart.html:35
+msgid "URL"
+msgstr ""
+
+#: ../dtml/vcardpart.html:13
+msgid "ZIP"
+msgstr "postinumero"
+
+#: ../dtml/list.html:48
+msgid "Sender"
+msgstr "lähettäjä"
+
+#: ../dtml/prefs.html:32 ../dtml/prefs.html:46
+msgid "Save changes"
+msgstr "Tallennetaanko muutokset"
+
+#: ../dtml/list.html:52 ../dtml/messagepart.html:16
+msgid "Date"
+msgstr "Päivämäärä"
+
+#: ../dtml/template.html:47
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: ../dtml/login.html:12
+msgid "Host"
+msgstr "isäntäkone"
+
+#: ../dtml/template.html:33
+msgid "New message"
+msgstr "Uusi viesti"
+
+#: ../dtml/mimepart.html:6
+msgid "MIME-type"
+msgstr ""
+
+#: ../dtml/about.html:20
+msgid "Look at"
+msgstr "tutki"
+
+#: ../dtml/prefs.html:22
+msgid "Signature:"
+msgstr "allekirjoitus:"
+
+#: ../dtml/sent.html:20
+msgid "Return to inbox"
+msgstr "palaa  lähteviin posteihin"
+
+#: ../dtml/list.html:70
+msgid "[new]"
+msgstr "[uusi9"
+
+#: ../dtml/vcardpart.html:29
+msgid "Fax"
+msgstr ""
+
+#: ../dtml/mail.html:15
+msgid "View raw headers"
+msgstr "näytä viestin raa'at otsikkotiedot"
+
+#: ../dtml/mail.html:6 ../dtml/mail.html:27
+msgid "Forward"
+msgstr "jatkolähetä"
+
+#: ../dtml/error.html:3
+msgid "Unfortunately, an error occured"
+msgstr "valitettavasti sattui virhe"
+
+#: ../dtml/mimepart.html:5
+msgid "Attachment"
+msgstr "liite"
+
+#: ../dtml/list.html:20
+msgid "To reply click on the sender and click on the subject to read."
+msgstr ""
+"JOs haluat vastata, klikkaa  lähettäjä, jos haluat lukea, klikkaa  viesti"
+
+#: ../dtml/mimepart.html:7
+msgid "Filename"
+msgstr "tiedostonimi"
+
+#: ../dtml/about.html:10
+msgid "You are using BoboMail version"
+msgstr "Käytät bobomailin versiota"
+
+#: ../dtml/prefs.html:32
+msgid "Messages per page:"
+msgstr "Viestiä sivulla:"
+
+#: ../dtml/list.html:71 ../dtml/list.html:78
+#, fuzzy
+msgid "(no date)"
+msgstr "(ei päivämäärää)"
+
+#: ../dtml/addrs.html:15 ../dtml/addrs.html:60 ../dtml/vcardpart.html:11
+msgid "Name"
+msgstr "nimi"
+
+#: ../dtml/vcardpart.html:10
+msgid "Title"
+msgstr "otsikko"
+
+#: ../dtml/about.html:7
+msgid "Patch manager"
+msgstr ""
+
+msgid "Message bounced"
+msgstr "Viesti pomppasi takaisin"
+
+msgid ""
+"Authentication failed. Please check your userid and password and try to "
+"login again."
+msgstr ""
+"Sinua ei kyetty tunnistamaan. Ole hyvä ja tarkista käyttäjätunnuksesi ja "
+"salasanasi  ja yritä kirjautua sisään uudestaan."
+
+msgid "Address book"
+msgstr "osoitekirja"
+
+msgid "Welcome! You successfully logged in"
+msgstr "Tervetuloa! Kirjauduit sisään onnistuneesti"
+
+msgid "Compose new message"
+msgstr "Kirjoita uusi viesti"
+
+msgid "Forward message"
+msgstr "Uudelleenlähetä viesti"
+
+msgid "Message sent without any problems"
+msgstr "Viesti lähetetty ilman minkäänlaisia ongelmia"
+
+msgid "Or maybe your session has expired"
+msgstr "tai ehkä istuntosi on vanhentunut"
+
+msgid "Read message"
+msgstr "Lue viesti"
+
+msgid "Reply to message"
+msgstr "Vastataanko viestiin"
+
+msgid "Selected message(s) deleted"
+msgstr "Valittu viesti tai valitut viestit poistettu"
+
+msgid "List inbox for %s"
+msgstr "luettele  tulevat postit hakuavaimena %s"
+
+msgid "Error"
+msgstr "virhe"
+
+msgid "Only loosers and communists need help (Weird Al Yankovic)"
+msgstr "Vain kommunistit ja luuserit tarvitsevat apua (Weird Al Yunkovic)"
+
+msgid "E-Mail"
+msgstr "sähköposti"
+
+msgid "Bounce message"
+msgstr "kimmotetaan viesti"
+
+msgid "Sent mail"
+msgstr "lähetetyt viestit"

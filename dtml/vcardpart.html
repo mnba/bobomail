@@ -1,0 +1,54 @@
+
+  <dtml-with card>
+  <table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td valign="top">
+		  <table bgcolor="#eeeeee" align="center" cellpadding="10"
+		  cellspacing="0" border="0" width="100%">
+			<tr><td colspan="2"><h3>V-Card</h3></td></tr>
+			<tr><td>
+				<table align="center" cellpadding="4" cellspacing="0" border="0">
+				  <tr><td class="ssb" align="right"><dtml-gt>Title</dtml-gt>:</td><td><dtml-var title></td></tr>
+				  <tr><td class="ssb" align="right"><dtml-gt>Name</dtml-gt>:</td><td><dtml-var fn></td></tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>Street</dtml-gt>:</td><td><dtml-var street></td></tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>ZIP</dtml-gt>:</td><td><dtml-var zip></td></tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>City</dtml-gt>:</td><td><dtml-var city></td></tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>State</dtml-gt>:</td><td><dtml-var state></td></tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>Country</dtml-gt>:</td><td><dtml-var country></td></tr>
+				</table>
+			  </td>
+			  <td valign="top">
+				<table valign="top" height="100%" align="center" cellpadding="4" cellspacing="0" border="0">
+				  <tr>
+					<td class="ssb"  align="right" valign="top"><dtml-gt>Telephone</dtml-gt>:</td>
+					<td >
+					  <tt><dtml-gt>Home</dtml-gt></tt>: <dtml-var tel;home><br>
+						  <tt><dtml-gt>Work</dtml-gt></tt>: <dtml-var tel;work><br>
+							  <tt><dtml-gt>Mobile</dtml-gt></tt>: <dthm-var tel;cell>
+					</td>
+				  </tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>Fax</dtml-gt>:</td><td><dtml-var tel;fax></td></tr>
+				  <tr><td class="ssb"  align="right"><dtml-gt>Pager</dtml-gt>:</td><td><dtml-var tel;pager></td></tr>
+				  <tr>
+					<td class="ssb"  align="right"><dtml-gt>Email</dtml-gt>:</td>
+					<td><a href="Compose?To=<dtml-var email;internet>"><dtml-var email;internet></a></td>
+				  </tr>
+				  <tr><td  class="ssb" align="right"><dtml-gt>URL</dtml-gt>:</td><td><a href="Goto?<dtml-var url url_quote>" target="_blank"><dtml-var url></td></tr>
+				  
+				</table>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="center" colspan="2">
+				<form action="../AddrBook/Add">
+				  <input type="hidden" name="username" value="<dtml-var fn>">
+				  <input type="hidden" name="email" value="<dtml-var email;internet>">
+				  <input type="submit" value="<dtml-gt>Add to address book</dtml-gt>">
+				</form>
+			  </td>
+			</tr>
+		  </table>
+		</td></tr>
+	  </table>
+		  
+  </dtml-with>

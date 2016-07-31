@@ -1,0 +1,34 @@
+<form action="ForwardChange">
+
+<br><br>
+<table align="center">
+<tr align="center" width="100%"><td valign="center">
+
+	<table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0"> 
+	  <tr>
+        <td>
+          <table align="center" border="0" bgcolor="#eeeeee" cellpadding="10" cellspacing="0"> 
+			<tr>
+						  <td align="center">
+							<table cellpadding="1" border="0"><tr>
+								<td class="ssb" align="right">Weiterleiten an:</td>
+								<td><input type="text" name="forwardto" value="<dtml-var forwardto>" size="40"></td>
+							  </tr>
+							  <tr>
+								<td align="right"><input type="checkbox" name="keepcopy" <dtml-if keepcopy>checked</dtml-if>></td>
+								<td class="ssb">Kopie zum Lesen hier in Mailbox lassen</td>
+							  </tr>
+							  </table>
+						      <br>	
+							  <input type="submit" value="&Auml;ndern"></td>
+						  </td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>
+
+</td></tr>
+</table>
+
+</form>

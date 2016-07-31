@@ -1,0 +1,54 @@
+<br>
+
+	<table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0"> 
+	  <tr >
+        <td>
+          <table align="center" border="0" bgcolor="#eeeeee" callpadding="4" cellspacing="0" width="100%"> 
+			<tr>
+			  <td>
+	
+	<form action="Send" method="post" enctype="multipart/form-data">
+	  <input type="hidden" name="InReplyTo" value="<dtml-var inreplyto url_quote missing>">
+	  <table border="0">
+		<tr>
+		  <td align="right" class="ss"><b><dtml-gt>From</dtml-gt>:</b></td>
+		  <td><dtml-var sender html_quote></td>
+		</tr>
+		<tr>
+		  <td align="right" class="ss"><b><dtml-gt>To</dtml-gt>:</b></td>
+		  <td><input type="text" name="to" size="65" value="<dtml-var to missing html_quote>"></td>
+		</tr>
+		<tr>
+		  <td align="right" class="ss"><b><dtml-gt>Cc</dtml-gt>:</b></td>
+		  <td><input type="text" name="cc" size="65" value="<dtml-var cc html_quote missing>"></td>
+		</tr>
+		<tr>
+		  <td align="right" class="ss"><b><dtml-gt>Bcc</dtml-gt>:</b></td>
+		  <td><input type="text" name="bcc" size="65" value="<dtml-var bcc html_quote missing>"></td>
+		</tr>
+		<tr>
+		  <td align="right" class="ss"><b><dtml-gt>Subject</dtml-gt>:</b></td>
+		  <td><input type="text" name="subject" size="65" value="<dtml-var subject html_quote missing>"></td>
+		</tr>
+		<tr>
+		  <td colspan="2" align="center">
+			<textarea wrap="hard" name="body" rows="13" cols="70"><dtml-var body html_quote missing></textarea>
+		  </td>
+		</tr>
+		<tr>
+    	  <td align="right" class="ss"><b><dtml-gt>File</dtml-gt>:</b></td>
+		  <td><input type="file" name="attach" size="45"></td>
+		</tr>
+		<tr>
+		  <td align="center" colspan="2"><input type="submit" value="<dtml-gt>Send message</dtml-gt>"></td>
+		</tr>
+	  </table>
+	</form>
+
+
+			</td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>

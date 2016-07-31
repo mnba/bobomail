@@ -1,0 +1,34 @@
+
+	<p align="center">
+	  <img alt="BoboMail" src="<dtml-var imagedir>/bobomail.jpg"><br>
+	<a href="http://bobomail.sourceforge.net"><dtml-gt>Homepage</dtml-gt></a> | 
+	<a href="http://sourceforge.net/project/?group_id=4938"><dtml-gt>Project-Page</dtml-gt></a> | 
+	<a href="http://sourceforge.net/bugs/?group_id=4938"><dtml-gt>Bug tracking</dtml-gt></a> | 
+	<a href="http://sourceforge.net/patch/?group_id=4938"><dtml-gt>Patch manager</dtml-gt></a> | 
+	<a href="http://sourceforge.net/mail/?group_id=4938"><dtml-gt>Mailing list</dtml-gt></a>
+<br>
+	  <b><dtml-gt>You are using BoboMail version</dtml-gt> <dtml-var version></b>
+	  <br><br>
+	  (c) 2000 Henning Schr&ouml;der 
+	  <dtml-if loggedin>
+	    <a href="Compose?To=ich@henning-schroder.de&Subject=BoboMail">&lt;ich@henning-schroeder.de&gt;</a>
+      <dtml-else>
+	    <a href="mailto:ich@henning-schroder.de">&lt;ich@henning-schroeder.de&gt;</a>
+	  </dtml-if>
+	  <br><br>
+	  <dtml-gt>Distributed under GNU General Public License</dtml-gt><br>
+	  <dtml-gt>Look at</dtml-gt> <a href="MailBox/Goto?http%3a%2f%2fwww.gnu.org">http://www.gnu.org</a> <dtml-gt>for details.</dtml-gt>
+	</p>	  
+	<br><br><br>
+	<div align="center">
+	  <pre><dtml-gt>This product includes software developed by Digital Creations
+for use in the</dtml-gt> <a href="Goto?http%3a%2f%2fwww.zope.org">Z Object Publishing Environment</a>
+	  </pre>
+		  <br><br>
+
+			  <a href="http://www.python.org"><img align="middle" alt="PYTHON powered" 
+												   border="0"src="<dtml-var imagedir>/PythonPoweredSmall.gif"></a>  
+				<a href="http://www.zope.org"><img align="middle" alt="Zope powered"
+												   border="0" src="<dtml-var imagedir>/ZopePoweredSmall.gif"></a>
+
+	</div>

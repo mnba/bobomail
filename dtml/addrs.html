@@ -1,0 +1,82 @@
+<dtml-if addrs>
+<form action="Send">
+<table align="center" border="0" width="85%">
+<tr align="center" width="100%"><td valign="center"  width="100%">
+
+			
+	<table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0" width="85%"> 
+		  <tr>
+			<td>
+			  <table align="center" border="0" bgcolor="#eeeeee" cellpadding="10" cellspacing="0" width="100%"> 
+				<tr>
+				  <td class="ss"><b><dtml-gt>To</dtml-gt></b></td>
+				  <td class="ss"><b><dtml-gt>Cc</dtml-gt></b></td>
+				  <td class="ss"><b><dtml-gt>Bcc</dtml-gt></b></td>
+				  <td class="ss"><b><dtml-gt>Name</dtml-gt></b></td>
+				  <td class="ss"><b><dtml-gt>Email</dtml-gt></b></td>
+				  <td>&nbsp;</td>
+				</tr>
+			    <dtml-in addrs>
+				<tr>
+				  <td><input type="checkbox" name="to_<dtml-var sequence-index>"></td>
+				  <td><input type="checkbox" name="cc_<dtml-var sequence-index>"></td>
+				  <td><input type="checkbox" name="bc_<dtml-var sequence-index>"></td>
+				  <td class="ss"><dtml-var username>&nbsp;</td>
+				  <td class="ss"><dtml-var email></td>
+				  <td><a href="Del?num=<dtml-var sequence-index>"><dtml-gt>Delete</dtml-gt></a></td>
+				</tr>
+				</dtml-in>
+				  <tr>
+					<td colspan="6">
+					  <div align="center">
+						<input type="submit" value="<dtml-gt>Send mail</dtml-gt>">
+					  </div>
+					</td>
+				  </tr>
+				
+			  </table>
+
+			</td>
+			</tr>
+		  </table>
+
+		</td>
+	  </tr>
+	</table>
+</dtml-if>
+
+</form>
+
+<form action="Add">
+<table width="100%" height="80%">
+<tr align="center" width="100%"><td valign="center"  width="100%">
+
+	<table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0" width="85%"> 
+	  <tr>
+        <td>
+          <table align="center" border="0" bgcolor="#eeeeee" cellpadding="10" cellspacing="0" width="100%"> 
+			<tr>
+			<td class="ss">
+			   <b><dtml-gt>Name</dtml-gt>:</b> <input name="username" type="text" size="15">
+			</td>
+			<td class="ss">
+			   <b><dtml-gt>Email</dtml-gt>:</b> <input name="email" type="text" size="20">
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2">
+			<div align="center">
+			<input type="submit" value="<dtml-gt>Add to address book</dtml-gt>">
+			</div>
+			</td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>
+
+</td></tr>
+</table>
+
+
+</form>

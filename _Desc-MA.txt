@@ -1,0 +1,82 @@
+ Patched to make workable by MA (Minas Abrahamyan, 2016-07-29)
+http://bobomail.sourceforge.net/
+
+https://sourceforge.net/projects/bobomail/files/
+
+https://sourceforge.net/projects/bobomail/files/bobomail/0.6pre1/bobomail-0.6pre1.tar.gz/download
+
+----
+Depends on ZPublisher - package from Zope2 (web application framework)
+ https://pypi.python.org/pypi/Zope2
+ 
+ pip install Zpublisher -- it installed many extra dependencies:
+   including effectively all the Zope2
+---
+
+Patching: 
+*) Adding header:
+# -*- coding: utf-8 -*-
+
+*) Replacing
+        import cgi_module_publisher
+        publish_module=cgi_module_publisher.publish_module
+with 
+ZPublisher publish_module :
+---cut---
+    global publish_module
+    try:
+        import ZPublisher
+        publish_module=ZPublisher.publish_module
+    except:
+        import cgi_module_publisher
+        publish_module=cgi_module_publisher.publish_module
+---cut--- 
+Resolution: directory ZPublisher renamed to ZPublisher-
+ - it now uses from the installed Zope instance
+ 
+*) 
+renaming  DocumentTemplate-
+it now uses the standard from Zope 
+
+*) other changes in source ... 
+
+*) moving the directory to:
+/usr/local/bobomail/
+
+Running again bobomail gives:
+
+/usr/local/bobomail $ ./BoboMailHTTPD.py 
+
+Opening browser with URL: http://localhost:9673/
+
+---Browser page shows: Error page ---  
+Site Error
+
+An error was encountered while publishing this resource.
+
+Sorry, a site error occurred.
+
+Traceback (innermost last):
+
+    Module ZPublisher.Publish, line 249, in publish_module_standard
+    Module ZPublisher.Publish, line 127, in publish
+    Module ZPublisher.BaseRequest, line 508, in traverse
+    Module ZPublisher.BaseRequest, line 352, in traverseName
+    Module ZPublisher.BaseRequest, line 85, in publishTraverse
+    Module webapp, line 59, in __bobo_traverse__
+
+TypeError: exceptions must be old-style classes or derived from BaseException, not str
+
+Troubleshooting Suggestions
+
+    The URL may be incorrect.
+    The parameters passed to this resource may be incorrect.
+    A resource that this resource relies on may be encountering an error.
+
+For more detailed information about the error, please refer to the error log.
+
+If the error persists please contact the site maintainer. Thank you for your patience. 
+------
+
+
+

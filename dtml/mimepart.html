@@ -1,0 +1,14 @@
+	<table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0" width="100%"> 
+	  <tr>
+		<td>
+		  <table align="center" bgcolor="#eeeeee" callpadding="4" cellspacing="0" border="0" width="100%">
+			<tr><td colspan="2"><h3><dtml-gt>Attachment</dtml-gt>: <img src="<dtml-var imagedir>/attach.gif" alt=""></h3></td></tr>
+			<tr><td align="right" class="ssb"><dtml-gt>MIME-type</dtml-gt>: </td><td><dtml-var mimetype></td></tr>
+	        <tr><td align="right" class="ssb" valign="top"><dtml-gt>Filename</dtml-gt>: </td>
+	        <td><a href="GetPart?index:int=<dtml-var index>&num=<dtml-var num>&folder=<dtml-var folder>"><dtml-var filename null="(no filename)"></a>
+				(<font size="-1"><dtml-gt>Click to download</dtml-gt></font>)</td></tr>
+	      </table>
+        </td>
+     </tr>
+   </table>
+

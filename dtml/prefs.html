@@ -1,0 +1,59 @@
+<table width="100%" height="80%">
+<tr align="center" width="100%"><td valign="center"  width="100%">
+
+	<table align="center" bgcolor="black" cellpadding="1" cellspacing="0" border="0" width="85%"> 
+	  <tr>
+        <td>
+          <table align="center" border="0" bgcolor="#eeeeee" cellpadding="10" cellspacing="0" width="100%"> 
+			<tr>
+			  <td>
+    
+    <dtml-with user>
+	<form action="Change" method="post">
+	  <table border="0" width="100%">
+		<tr>
+		  <td class="ss"><dtml-gt>Full name:</dtml-gt></td>
+		  <td>
+			<input type="text" name="username" value="<dtml-var name missing>" size="50">
+		  </td>
+		</tr>
+		<tr>
+		  <td colspan="2"  class="ss"><br>
+			<dtml-gt>Signature:</dtml-gt><br>
+			<textarea rows="5" cols="70" name="signature"><dtml-var signature missing></textarea>
+		  </td>
+		</tr>
+	    <tr>
+         <td colspan="2"  class="ss"><br>
+            <input type="checkbox" name="inlineimages" <dtml-if inlineimages>checked</dtml-if>><dtml-gt>View attached images inside the page</dtml-gt>
+		 </td>
+         <td>
+	    </tr><tr>	
+	       <td  class="ss"><br><dtml-gt>Messages per page:</dtml-gt></td>
+	        <td  class="ss">
+            <select name="maxlistsize:int">
+			  <option <dtml-if expr="maxlistsize == 10">selected</dtml-if>>10
+			  <option <dtml-if expr="maxlistsize == 20">selected</dtml-if>>20
+			  <option <dtml-if expr="maxlistsize == 40">selected</dtml-if>>40
+			  <option <dtml-if expr="maxlistsize == 60">selected</dtml-if>>60
+			  <option <dtml-if expr="maxlistsize == 65535">selected</dtml-if> value="65535">infinite
+	        </select>
+		 </td>
+		</tr>
+	  </table>
+	<br>
+	  <center>
+		<input type="submit" value="<dtml-gt>Save changes</dtml-gt>">
+	  </center>	
+    </form>
+    </dtml-with>
+
+			</td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>
+
+</td></tr>
+</table>

@@ -1,0 +1,41 @@
+/AddrBook.py/1.3/Tue Apr  3 02:07:58 2001//
+/BoboMailHTTPD.py/1.1.1.1/Sun Feb 25 14:24:05 2001//
+/CDTML.py/1.1/Fri Aug 17 00:52:43 2001//
+/CDTML_test.py/1.1/Fri Aug 17 00:52:43 2001//
+/DotForward.py/1.2/Thu Jun 14 13:02:24 2001//
+/LocalUsers.py/1.2/Thu Jun 14 13:02:24 2001//
+/Makefile/1.1.1.1/Sun Feb 25 14:24:16 2001//
+/Password.py/1.2/Thu Jun 14 13:02:24 2001//
+/Prefs.py/1.5/Thu Jun 14 13:02:24 2001//
+/ZCGI.py/1.1.1.1/Sun Feb 25 14:24:01 2001//
+/auth.py/1.4/Thu Jun 14 13:02:24 2001//
+/bobomail.proj/1.2/Thu Jun 14 13:02:24 2001//
+/bobomod.py/1.4/Thu Jun 14 13:02:24 2001//
+/fintl.py/1.1.1.1/Sun Feb 25 14:24:16 2001//
+/gttag.py/1.1.1.1/Sun Feb 25 14:24:16 2001//
+/init.py/1.1.1.1/Sun Feb 25 14:24:22 2001//
+/main.py/1.12/Tue Aug 28 15:40:49 2001//
+/makedist/1.1.1.1/Sun Feb 25 14:24:16 2001//
+/makehtml.py/1.5/Wed Aug  8 20:10:27 2001//
+/mime.types/1.1.1.1/Sun Feb 25 14:24:19 2001//
+/sendmail.py/1.3/Mon Apr  2 00:21:04 2001//
+/session.py/1.5/Mon Aug  6 00:54:13 2001//
+/setup.py/1.1.1.1/Sun Feb 25 14:24:25 2001//
+/user.py/1.3/Thu Jun 14 13:02:24 2001//
+D/.snprj////
+D/DocumentTemplate////
+D/ZPublisher////
+D/cgi-bin////
+D/docs////
+D/dtml////
+D/images////
+D/lib////
+D/locale////
+D/pcgi////
+/MailBox.py/1.14/Thu Mar  7 23:44:28 2002//
+/Message.py/1.4/Thu Mar  7 21:56:36 2002//
+/webapp.py/1.8/Fri Mar  8 00:23:33 2002//
+/mimeviewer.py/1.6/Fri Mar  8 01:51:01 2002//
+/fetchmail.py/1.6/Fri Mar  8 02:26:21 2002//
+/bobomailrc.py/1.6/Wed Mar 13 00:03:06 2002//
+/defaults.py/1.4/Wed Mar 13 00:08:12 2002//

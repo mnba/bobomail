@@ -1,0 +1,25 @@
+Here is an example how to create a virtual domain with SSL do make 
+BoboMail more secure:
+
+
+<VirtualHost _default_:443>
+   DocumentRoot /var/www/htdocs
+   ServerName myserver.org
+   ServerAdmin admin@myserver.org
+   ErrorLog logs/error_log
+   TransferLog logs/access_log
+   SSLEngine on
+   SSLCertificateFile    /etc/ssl/server.crt
+   SSLCertificateKeyFile /etc/ssl/private/server.key
+   CustomLog logs/ssl_request_log \
+    "%t %h %{SSL_PROTOCOL}x
+    %{SSL_CIPHER}x \"%r\" %b"
+   ServerAlias web.myserver.org www.myserver.org
+   Alias /boboimages/ "/var/www/bobomail.myserver.org/images/"
+   ScriptAlias /mail "/var/www/bobomail.myserver.org/bobomail.cgi"
+</VirtualHost>
+	                         
+				 
+Hope this helps a little still (at least for inspiration). I hadn't 
+time to test it myself but it should be easy and is really 
+recommenend if you have BoboMail in serious use.

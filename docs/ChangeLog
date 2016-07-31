@@ -1,0 +1,151 @@
+Change-log
+
+0.6pre1
+
+  * with the help from Ken Causey the annoying first-login-bug is fixed now :-)
+
+  * IMAP support for uw-imapd, expects additional folders in $HOME/Mail
+
+  * now runs with Python 2.x without problems
+
+  * new look, using nicer template inspired by zope.org
+
+  * and some other small bug fixes (see cvs if you like)
+
+0.5
+
+  * documented the source a little bit for interested developers
+
+  * now if you enable multiple domains you can limit it to special hosts   
+
+  * fixed various messages parsing bugs (e.g. now accepts mails with attachment but without body and always recognizes to filename of an attachment)
+
+  * some visual improvements to the templates (more to come in the next release :-))
+
+0.4-7
+
+  * Spanish translation (thanks to Diego Brouard Martín)
+  
+  * new session management
+
+0.4-6
+
+  * seperated preferences, adressbook and mailbox into different classes
+
+  * two fixes in sendmail.py (thanks to Georg Bauer)
+
+  * Finish translation (thanks to Markku Yli-Pentilä)
+
+  * some important fixes to mimeviewer.py and some other files
+    (sorry lost mail with sender - nevertheless thanks!)
+	
+0.4-5:
+
+  * added bouncing
+
+  * even more clean-ups and modularisation but more to come
+
+  * improved vcard-support
+
+  * some notes in docs/README.Security about https
+
+0.4-4:
+
+  * implemented simple adressbook
+
+  * changed design of templates a litte bit, more use of css
+
+  * some code clean-ups and minor fixes
+
+0.4-2:
+
+  * more modularisation
+
+  * maxium messages per page in list-view (customizeable via prefs)
+
+  * named anchor in html-mails now don't cause errors any more
+
+  * complex vcards are now skipped instead of generating errors
+
+  * now works with Python version >= 1.6
+
+  * Brazilian Portuguese (pt_BR) translation (thanks to Cristiano)
+
+  * tollerates multi-part messages without end-marker
+
+  * BoboMailHTTPD and PCGI work again :-)
+
+  * "make install" compiles all files to speed up BoboMail
+
+0.4:
+
+  * message size instead of lines shown
+
+  * view messages and headers in raw format
+
+  * new mails are indicated through a nice icon
+  
+  * preferences: username, signature, view images inline
+
+  * replies now with In-Reply-To header for intelligent mailers with
+    thread-view 
+
+  * the username will automatically be determined if auth_host == "localhost"
+
+  * send mails via pipes
+
+  * sort order visible by header, reverse sort order, order stored in prefs
+
+  * usability: status messages are now displayed in the list view
+
+  * some fixes (filenames with path in attachment, authentication problem
+    caused by a buggy dumbdbm.py, Y2K issues, deleting first message)
+
+  * simple IMAP4 support (working but not much tested)
+
+  * mailtos in HTML messages are converted
+
+  * open new window on message links
+
+  * word-wrapping in text messages
+
+  * show all recipients, reply to all
+
+0.3-1: small bugfix-release (ServicePack 1, hehe ;-))
+
+  * additional notice about Zope components in documentation
+
+  * updated TODO
+
+  * reversed ChangeLog order
+
+  * fixed distribution problems with permissions/file access
+
+  * fixed attachment bug in sendmail.py (thanks to Guillem)
+
+  * attached multiple pop-server patch from homepage demo in distribution
+
+0.3: first appearance on Sourceforge
+
+  * renamed project from "DogMail" to "BoboMail"
+
+  * added i18n-support with German translations
+
+  * some bug fixes
+
+  * disabled some untested or partially implemented functions for release
+
+0.2: complete rewrite of 0.1 with lots of new features
+
+  * very improved MIME handling
+
+  * extensive usage of DocumentTemplates
+
+  * more modular and extendable
+
+0.1: never released to public
+
+  * simple mail facilities
+
+  * bad hacked MIME support
+

@@ -1,0 +1,26 @@
+    
+		  <h3>
+			<dtml-gt>Unfortunately, an error occured</dtml-gt>:
+		  </h3>
+
+		  <p>
+			<b><dtml-var description></b>
+		  </p>
+		  
+		  <dtml-if reason>
+			<p><dtml-var reason></p>
+		  </dtml-if>
+
+		  <br><br><br>
+		  <div align="center">
+		  <dtml-if loggedin>
+		  <form action="<dtml-var cgi>/MailBox/List" onSubmit="javascript:history.back()"> 
+			<input type="submit" value="<dtml-gt>Back</dtml-gt>">
+		  </form>
+		  <dtml-else>
+		  <form action="<dtml-var cgi>/">
+			<input type="submit" value="<dtml-gt>Login</dtml-gt>">
+		  </form>
+		  </dtml-if>
+		  </div>
+		 

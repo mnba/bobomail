@@ -1,0 +1,14 @@
+I think I actually introduced this bug when I simplified
+the HTMLifying of email addresses, because I simplified
+something into incorrectness.  Anyway, the problem is with
+links that include &, like:
+  http://somewhere.com/cgi-bin/page?id
+The & is turned into &amp; in the <a hrefwhich breaks it.  Also, I think < isn't
++detected as an end-
+of-link, which it should be.  (, {}, [], and perhaps :
+should also be added (mimeviewer.py, line 164).  The &amp;
+problem is probably just from using the wrong form of
+quote -- or maybe Goto needs to unquote it differently.
+                                                            
+---------------------------------------------------------------------------
+

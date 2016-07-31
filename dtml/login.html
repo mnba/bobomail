@@ -1,0 +1,39 @@
+
+		  <br>
+		  <p>
+			<dtml-gt>Please authenticate yourself</dtml-gt>:
+		  </p>
+		  <br>
+
+		  <form action="Login" method="post">
+			<table border="0" align="center">
+			  <dtml-if multihosts>
+			  <tr>
+				<td class="ss" align="right"><dtml-gt>Host</dtml-gt>:</td>
+				<td>
+				  <dtml-if hosts>
+				      <select name="host">
+				      <dtml-in hosts>
+				        <option value="<dtml-var sequence-item>"><dtml-var sequence-item>
+				      </dtml-in>
+				      </select>
+				  <dtml-else>
+				    <input type="text" name="host" size="30">
+				  </dtml-if>
+				</td>
+			  </tr>
+              </dtml-if>
+			  <tr>
+				<td class="ss" align="right"><dtml-gt>Userid</dtml-gt>:</td>
+				<td><input type="text" name="userid" size="30"></td>
+			  </tr>
+			  <tr>
+				<td class="ss" align="right"><dtml-gt>Password</dtml-gt>:</td>
+				<td><input type="password" name="password" size="30"></td>
+			  </tr>
+			  <tr>
+				<td align="center" colspan="2"><input type="submit" value="<dtml-gt>Login</dtml-gt>"></td>
+			  </tr>
+			</table>
+		  </form>
+

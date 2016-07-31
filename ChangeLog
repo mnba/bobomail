@@ -1,0 +1,547 @@
+2002-03-08 01:54  henning
+
+	* bobomailrc.py: app_dir has to be hard-coded mostly, so the
+	example should do it as well
+
+2002-03-08 01:51  henning
+
+	* cgi-bin/bobomail.cgi: Hides some anoying warnings (new in Python
+	2.x)
+
+2002-03-08 01:50  henning
+
+	* docs/THANKS: Added Ken Causey.  He fixed the bug when logging in
+	for the for first time andl two other small ones in Message.py
+	(From-header without end-quote, wrong weekday in getdate)
+
+2002-03-08 01:46  henning
+
+	* lib/dbm.py: Catch KeyErrors from dumbdbm
+
+2002-03-08 01:46  henning
+
+	* lib/Message.py: Fixed bug in getdate about wrong day
+
+2002-03-08 01:43  henning
+
+	* webapp.py: Fix for generating templates on Python 2.2 Workaround
+	for small bug in cgitb Added slash after CGI-URL for new sessions
+
+2002-03-08 01:41  henning
+
+	* Message.py: append end-quote in From-header
+
+2002-03-08 01:40  henning
+
+	* dtml/error.html: Add a slash after cgi URL (because of session
+	management)
+
+2002-03-08 01:39  henning
+
+	* MailBox.py, dtml/list.html, dtml/mail.html: Do not show folder
+	stuff when source (POP3) does not support folders
+
+2001-08-28 18:35  henning
+
+	* lib/pop3lib.py: Added variables, previously imported poplib but
+	not accessable in new Python versions
+
+2001-08-28 17:40  henning
+
+	* MailBox.py, bobomailrc.py, fetchmail.py, main.py: Fixed POP3. It
+	was broken after introducing IMAP4-support
+
+2001-08-17 02:52  henning
+
+	* CDTML.py, CDTML_test.py: Compiled-DTML: A small fast replacement
+	for ZTemplates aka DocumentTemples
+
+2001-08-11 00:18  henning
+
+	* MailBox.py, fetchmail.py, main.py, mimeviewer.py,
+	dtml/error.html, dtml/imagepart.html, dtml/list.html,
+	dtml/mail.html, dtml/mimepart.html, dtml/template.html,
+	lib/connections.py: Implemented IMAP4 :-) It was really easy (Done
+	in one night...) POP3 is probably broken now but it won't be hard
+	to fix
+
+2001-08-09 15:54  henning
+
+	* dtml/template.html: Changed template so that it looks nice with
+	Netscape
+
+2001-08-09 03:54  henning
+
+	* MailBox.py: new: MailBox.getSender(au) - called from various
+	places
+
+2001-08-09 03:52  henning
+
+	* fetchmail.py: Made class UnixMailspool working by adding __call__
+	(for lists) and recognizing the message size
+
+2001-08-09 03:50  henning
+
+	* main.py: Fixed bug: return authError() -> return self.authError()
+
+2001-08-09 03:49  henning
+
+	* dtml/login.html: If allowed_hosts is set you now get a
+	dropdown-list for the host
+
+2001-08-09 02:28  henning
+
+	* docs/INSTALL: Fixed: I explained running "make install" twice.
+
+2001-08-09 02:22  henning
+
+	* main.py: Oh I forgot a commit
+
+2001-08-08 23:58  henning
+
+	* docs/INSTALL: Added information to call "make install" for speed
+
+2001-08-08 23:54  henning
+
+	* docs/: ChangeLog, TODO, index.html: Updated documentation for
+	release
+
+2001-08-08 23:33  henning
+
+	* bobomailrc.py: Last changes before release - DEBUG = false
+
+2001-08-08 23:28  henning
+
+	* locale/: es_ES/LC_MESSAGES/bobomail.mo,
+	fi_FI/LC_MESSAGES/bobomail.mo: file bobomail.mo was initially added
+	on branch v0_5.
+
+2001-08-08 23:28  henning
+
+	* locale/: es_ES/LC_MESSAGES/bobomail.mo,
+	fi_FI/LC_MESSAGES/bobomail.mo: Updated translations
+
+2001-08-08 23:25  henning
+
+	* makedist: Updated script to exclude compiled Python code and CVS
+	files
+
+2001-08-08 22:10  henning
+
+	* makehtml.py: Changed fixed path to image_dir
+
+2001-08-07 19:16  henning
+
+	* docs/index.html: Updated homepage
+
+2001-08-07 19:15  henning
+
+	* docs/TODO: Updated TODO
+
+2001-08-07 19:14  henning
+
+	* main.py, makehtml.py, dtml/template.html: Code to generate
+	project homepage now uses the same base template
+
+2001-08-06 17:36  henning
+
+	* dtml/list.html: Removed spaces from Next/Previous links
+
+2001-08-06 17:30  henning
+
+	* images/logo-trans.gif: Removed some white pixels from background
+
+2001-08-06 17:16  henning
+
+	* dtml/template.html, images/backgr.gif, images/border1.gif,
+	images/border2.gif: Improved page layout - round borders insprired
+	by (stolen from *g*) zope.org
+
+2001-08-06 03:34  henning
+
+	* dtml/: about.html, about.html: Fixed link to gnu.org
+
+2001-08-06 03:26  henning
+
+	* defaults.py: Changed version string to 0.5
+
+2001-08-06 03:25  henning
+
+	* session.py: Fixed session manager when using with persistent cgi
+
+2001-08-06 02:54  henning
+
+	* session.py: Fixed session manager when using with persistent cgi
+
+2001-08-06 00:26  henning
+
+	* makehtml.py: Some visual improvements
+
+2001-08-06 00:07  henning
+
+	* MailBox.py: Workaround-fix - Opera for Linux behaves strange with
+	empty file form fields
+
+2001-08-06 00:04  henning
+
+	* Message.py: Fixed typo to display short date format
+
+2001-07-28 20:07  henning
+
+	* MailBox.py, main.py: Fixed: Redirect to foreign sites works again
+
+2001-07-28 19:58  henning
+
+	* MailBox.py: Fixed: Reply-to-all works again
+
+2001-07-28 19:48  henning
+
+	* mimeviewer.py: .toText() removes "Add to adress book" from string
+
+2001-07-28 19:43  henning
+
+	* MailBox.py, dtml/compose.html: Now shows From-header when you
+	write a mail. Very practical to see if it is configured correctly
+
+2001-07-28 19:35  henning
+
+	* dtml/list.html: Fixed copy-paste mistake ;)
+
+2001-07-26 18:24  henning
+
+	* dtml/list.html: Smaller font for list. Looks better on my
+	computer. Needs testing with other browsers and operating systems..
+
+2001-07-26 18:13  henning
+
+	* images/attach.gif: New image from Mozilla. Looks nice :-)
+
+2001-07-26 18:01  henning
+
+	* main.py: Again small fix to get multiple finally working
+
+2001-07-26 17:59  henning
+
+	* dtml/list.html, images/bobomail.css, images/down.gif,
+	images/up.gif: Added images to indicate sort order
+
+2001-07-25 04:46  henning
+
+	* dtml/template.html: I've decided to hide the Help-Link until real
+	help is available
+
+2001-07-25 04:45  henning
+
+	* dtml/mail.html: Second "Reply to all" renamed to "Forward"
+	(Copy-paste isn't good everytime ;-))
+
+2001-07-25 04:37  henning
+
+	* dtml/list.html: Improved some small things, fix for Netscape
+	(empty cells..)
+
+2001-07-25 04:16  henning
+
+	* MailBox.py, lib/Message.py: Fixed bug for mails without text-body
+	but with attachment Fixed filename parsing for attachments, now
+	accepts unquoted filenames
+
+2001-07-20 15:32  henning
+
+	* main.py: Fixed small Syntax error
+
+2001-07-20 15:28  henning
+
+	* bobomailrc.py, main.py: Now if you enable multiple domains you
+	can limit it to special hosts
+
+2001-07-20 14:47  henning
+
+	* .snprj/: bobomail.1, bobomail.by, bobomail.cl, bobomail.con,
+	bobomail.ctr, bobomail.e, bobomail.ec, bobomail.f, bobomail.fd,
+	bobomail.fil, bobomail.fu, bobomail.gv, bobomail.icl, bobomail.in,
+	bobomail.iu, bobomail.iv, bobomail.ma, bobomail.mi, bobomail.t,
+	bobomail.to, tmp_XX5a21: Files from SourceNavigator
+
+2001-07-20 14:43  henning
+
+	* dtml/vcardpart.html: small cosmetic change
+
+2001-06-14 15:02  henning
+
+	* DotForward.py, LocalUsers.py, MailBox.py, Message.py,
+	Password.py, Prefs.py, auth.py, bobomail.proj, bobomod.py,
+	defaults.py, fetchmail.py, main.py, user.py, webapp.py,
+	lib/Message.py, lib/connections.py: Added some doc-strings
+
+2001-04-09 00:18  henning
+
+	* mimeviewer.py: Small fix to handle rfc822 attachments from James
+	H. Thompson - Thanks :-)
+
+2001-04-03 15:01  henning
+
+	* dtml/: compose.html, mail.html, messagepart.html, mimepart.html,
+	textpart.html, vcardpart.html: small visual improvements
+
+2001-04-03 13:07  henning
+
+	* locale/: de_DE/LC_MESSAGES/bobomail.mo,
+	pt_BR/LC_MESSAGES/bobomail.mo: Fixes for fuzzy translations
+
+2001-04-03 13:06  henning
+
+	* locale/: de.po, pt_BR.po: Some fixes to fuzzy translations
+
+2001-04-03 13:04  henning
+
+	* docs/: ChangeLog, README, THANKS: Updated documentation due to
+	recent changes
+
+2001-04-03 13:04  henning
+
+	* webapp.py: Use REQUEST object instead of os.environ everywhere
+
+2001-04-03 04:10  henning
+
+	* dtml/: list.html, messagepart.html, vcardpart.html: Fixes due to
+	new session session mangement and visual improvements
+
+2001-04-03 04:07  henning
+
+	* AddrBook.py, MailBox.py, Prefs.py, auth.py, bobomod.py,
+	defaults.py, main.py, mimeviewer.py, session.py, webapp.py: Added
+	session instance to REQUEST dictionary and changed corresponding
+	code
+
+2001-04-03 04:00  henning
+
+	* locale/: Makefile, bobomail.pot, de.po, de.pox, es_ES.po,
+	es_ES.pox, fi.po, fi.pox, pt_BR.po, pt_BR.pox,
+	de_DE/LC_MESSAGES/bobomail.mo, pt_BR/LC_MESSAGES/bobomail.mo: Fixed
+	translations with fuzzy strings
+
+2001-04-02 15:03  henning
+
+	* locale/Makefile: Changes for Spanish translations
+
+2001-04-02 15:02  henning
+
+	* locale/: es_ES.po, es_ES.pox: Got Spanish translations :-)
+
+2001-04-02 02:21  henning
+
+	* AddrBook.py, MailBox.py, Prefs.py, auth.py, bobomailrc.py,
+	bobomod.py, main.py, sendmail.py, session.py, user.py, webapp.py,
+	dtml/about.html, dtml/addrs.html, dtml/bounce.html,
+	dtml/compose.html, dtml/error.html, dtml/forwardaddr.html,
+	dtml/imagepart.html, dtml/list.html, dtml/mail.html,
+	dtml/messagepart.html, dtml/mimepart.html, dtml/password.html,
+	dtml/prefs.html, dtml/sent.html, dtml/template.html,
+	dtml/users.html, dtml/vcardpart.html, lib/Message.py,
+	lib/connections.py: Changes for new session management - nearly
+	working ;-)
+
+2001-03-04 15:53  henning
+
+	* lib/dbm.py: Interface changes
+
+2001-03-04 15:50  henning
+
+	* session.py, webapp.py: Changes in session mangement - breaks
+	current BoboMail
+
+2001-03-03 20:21  henning
+
+	* DocumentTemplate/__init__.py: Small hack to use DocumentTemplate
+	without ExtensionModule
+
+2001-03-03 19:48  henning
+
+	* DocumentTemplate/: DT_HTML.py, DT_If.py, DT_In.py, DT_InSV.py,
+	DT_Let.py, DT_Raise.py, DT_Return.py, DT_String.py, DT_Try.py,
+	DT_UI.py, DT_Util.py, DT_Var.py, DT_With.py, DTtest.py,
+	DTtestExpr.py, DocumentTemplate.py, VSEval.py, __init__.py,
+	gparse.py, gparse_test.py, pDocumentTemplate.py: Copied files from
+	latest Zope
+
+2001-03-03 19:44  henning
+
+	* ZPublisher/: BaseRequest.py, BaseResponse.py, BeforeTraverse.py,
+	Client.py, Converters.py, HTTPRequest.py, HTTPResponse.py,
+	Publish.py, Test.py, __init__.py, cgi.py, maybe_lock.py, xmlrpc.py:
+	Copied files from latest Zope
+
+2001-03-02 04:27  henning
+
+	* webapp.py: Got it working for anonymous sessions :-)
+
+2001-03-02 03:39  henning
+
+	* webapp.py: Started simple web application framework with session
+	management
+
+2001-02-26 02:28  henning
+
+	* sendmail.py: fixed fix for encoding of binary attachments
+
+2001-02-26 02:27  henning
+
+	* makehtml.py: version variable name had changed
+
+2001-02-26 02:25  henning
+
+	* MailBox.py, Prefs.py: Fixed redirect because the path had changed
+
+2001-02-25 17:08  henning
+
+	* sendmail.py, docs/ChangeLog, docs/THANKS: Initial checkin
+
+2001-02-25 15:30  henning
+
+	* pcgi/pcgi.h, pcgi/pcgi_publisher.py, pcgi/Example/pcgitest,
+	pcgi/Example/pcgitime.py, pcgi/MrCreosote/README.MrCreosote,
+	pcgi/MrCreosote/creosote.c, pcgi/MrCreosote/creosote.h,
+	pcgi/MrCreosote/creosote.py, pcgi/Test/.cvsignore,
+	pcgi/Test/README.parseinfo, pcgi/Util/README,
+	pcgi/Util/killpcgi.py, pcgi/Util/pcgifile.py,
+	pcgi/Win32/Makefile.nt, pcgi/Win32/README.NT,
+	ZPublisher/BaseRequest.py, ZPublisher/BaseResponse.py,
+	ZPublisher/Client.py, ZPublisher/Converters.py,
+	ZPublisher/HTTPRequest.py, ZPublisher/HTTPResponse.py,
+	ZPublisher/Publish.py, ZPublisher/Request.py,
+	ZPublisher/Response.py, ZPublisher/Test.py, ZPublisher/__init__.py,
+	ZPublisher/cgi.py, ZPublisher/mapply.py, ZPublisher/maybe_lock.py,
+	ZPublisher/xmlrpc.py, cgi-bin/bobomail.cgi,
+	cgi-bin/pcgibobomail.cgi, cgi-bin/profilemail.cgi,
+	cgi-bin/profileview.cgi: Initial revision
+
+2001-02-25 15:30  henning
+
+	* pcgi/pcgi.h, pcgi/pcgi_publisher.py, pcgi/Example/pcgitest,
+	pcgi/Example/pcgitime.py, pcgi/MrCreosote/README.MrCreosote,
+	pcgi/MrCreosote/creosote.c, pcgi/MrCreosote/creosote.h,
+	pcgi/MrCreosote/creosote.py, pcgi/Test/.cvsignore,
+	pcgi/Test/README.parseinfo, pcgi/Util/README,
+	pcgi/Util/killpcgi.py, pcgi/Util/pcgifile.py,
+	pcgi/Win32/Makefile.nt, pcgi/Win32/README.NT,
+	ZPublisher/BaseRequest.py, ZPublisher/BaseResponse.py,
+	ZPublisher/Client.py, ZPublisher/Converters.py,
+	ZPublisher/HTTPRequest.py, ZPublisher/HTTPResponse.py,
+	ZPublisher/Publish.py, ZPublisher/Request.py,
+	ZPublisher/Response.py, ZPublisher/Test.py, ZPublisher/__init__.py,
+	ZPublisher/cgi.py, ZPublisher/mapply.py, ZPublisher/maybe_lock.py,
+	ZPublisher/xmlrpc.py, cgi-bin/bobomail.cgi,
+	cgi-bin/pcgibobomail.cgi, cgi-bin/profilemail.cgi,
+	cgi-bin/profileview.cgi: Initial checkin
+
+2001-02-25 15:27  henning
+
+	* .snprj/bobomail.fil, .snprj/bobomail.gv, .snprj/bobomail.fu,
+	.snprj/bobomail.ma, .snprj/bobomail.t, .snprj/bobomail.iv,
+	.snprj/bobomail.cl, .snprj/bobomail.ec, .snprj/bobomail.fd,
+	.snprj/bobomail.e, .snprj/bobomail.mi, .snprj/bobomail.in,
+	.snprj/bobomail.con, .snprj/bobomail.to, .snprj/bobomail.by,
+	pcgi/.cvsignore, pcgi/Makefile.in, pcgi/README, pcgi/config.h.in,
+	pcgi/configure, pcgi/configure.in, pcgi/install-sh, pcgi/manifest,
+	pcgi/parseinfo.c, pcgi/pcgi-wrapper.c: Initial revision
+
+2001-02-25 15:27  henning
+
+	* .snprj/bobomail.fil, .snprj/bobomail.gv, .snprj/bobomail.fu,
+	.snprj/bobomail.ma, .snprj/bobomail.t, .snprj/bobomail.iv,
+	.snprj/bobomail.cl, .snprj/bobomail.ec, .snprj/bobomail.fd,
+	.snprj/bobomail.e, .snprj/bobomail.mi, .snprj/bobomail.in,
+	.snprj/bobomail.con, .snprj/bobomail.to, .snprj/bobomail.by,
+	pcgi/.cvsignore, pcgi/Makefile.in, pcgi/README, pcgi/config.h.in,
+	pcgi/configure, pcgi/configure.in, pcgi/install-sh, pcgi/manifest,
+	pcgi/parseinfo.c, pcgi/pcgi-wrapper.c: Initial checkin
+
+2001-02-25 15:23  henning
+
+	* auth.py, ZCGI.py, BoboMailHTTPD.py, bobomailrc.py, bobomail.proj,
+	fetchmail.py, Makefile, fintl.py, gttag.py, main.py, makedist,
+	Message.py, makehtml.py, defaults.py, mime.types, init.py,
+	mimeviewer.py, sendmail.py, session.py, user.py, AddrBook.py,
+	setup.py, DotForward.py, Prefs.py, LocalUsers.py, Password.py,
+	bobomod.py, MailBox.py, docs/AUTHORS, docs/COPYING, docs/ChangeLog,
+	docs/PROBLEMS, docs/README, docs/TODO, docs/BUGS, docs/CREDITS,
+	docs/INSTALL, docs/THANKS, docs/README.OpenBSD, docs/index.html,
+	docs/README.Security, DocumentTemplate/DT_HTML.py,
+	DocumentTemplate/DT_If.py, DocumentTemplate/DT_In.py,
+	DocumentTemplate/DT_InSV.py, DocumentTemplate/DT_Let.py,
+	DocumentTemplate/DT_Raise.py, DocumentTemplate/DT_Return.py,
+	DocumentTemplate/DT_String.py, DocumentTemplate/DT_Try.py,
+	DocumentTemplate/DT_UI.py, DocumentTemplate/DT_Util.py,
+	DocumentTemplate/DT_Var.py, DocumentTemplate/DT_With.py,
+	DocumentTemplate/DTtest.py, DocumentTemplate/DTtestExpr.py,
+	DocumentTemplate/DTtest_basicIn.py,
+	DocumentTemplate/DocumentTemplate.py, DocumentTemplate/VSEval.py,
+	DocumentTemplate/__init__.py, DocumentTemplate/gparse.py,
+	DocumentTemplate/gparse_test.py,
+	DocumentTemplate/pDocumentTemplate.py,
+	DocumentTemplate/ts_regex.py, dtml/error.html, dtml/login.html,
+	dtml/mimepart.html, dtml/textpart.html, dtml/list.html,
+	dtml/vcardpart.html, dtml/mail.html, dtml/template.html,
+	dtml/compose.html, dtml/imagepart.html, dtml/messagepart.html,
+	dtml/sent.html, dtml/about.html, dtml/htmlpart.html,
+	dtml/prefs.html, dtml/addrs.html, dtml/bounce.html,
+	dtml/password.html, dtml/users.html, dtml/forwardaddr.html,
+	images/attach.gif, images/logo.gif, images/PythonPoweredSmall.gif,
+	images/ZopePoweredSmall.gif, images/backgr.gif, images/new.gif,
+	images/bobomail.jpg, images/bobomail.css, images/logo-trans.gif,
+	lib/pipesmtp.py, lib/pop3lib.py, lib/dbm.py, lib/util.py,
+	lib/dumbdbm.py, lib/Message.py, lib/__init__.py,
+	lib/connections.py, lib/logging.py, locale/Makefile, locale/de.po,
+	locale/pygettext.py, locale/de.pox, locale/pygettext-py.diff,
+	locale/messages.pot, locale/pt_BR.pox, locale/pt_BR.po,
+	locale/bobomail.pot, locale/fi.po, locale/fi.pox,
+	locale/de_DE/LC_MESSAGES/bobomail.mo,
+	locale/pt_BR/LC_MESSAGES/bobomail.mo, .snprj/bobomail.1,
+	.snprj/bobomail.ctr, .snprj/bobomail.icl, .snprj/tmp_XX5a21,
+	.snprj/bobomail.f, .snprj/bobomail.iu: Initial revision
+
+2001-02-25 15:23  henning
+
+	* auth.py, ZCGI.py, BoboMailHTTPD.py, bobomailrc.py, bobomail.proj,
+	fetchmail.py, Makefile, fintl.py, gttag.py, main.py, makedist,
+	Message.py, makehtml.py, defaults.py, mime.types, init.py,
+	mimeviewer.py, sendmail.py, session.py, user.py, AddrBook.py,
+	setup.py, DotForward.py, Prefs.py, LocalUsers.py, Password.py,
+	bobomod.py, MailBox.py, docs/AUTHORS, docs/COPYING, docs/ChangeLog,
+	docs/PROBLEMS, docs/README, docs/TODO, docs/BUGS, docs/CREDITS,
+	docs/INSTALL, docs/THANKS, docs/README.OpenBSD, docs/index.html,
+	docs/README.Security, DocumentTemplate/DT_HTML.py,
+	DocumentTemplate/DT_If.py, DocumentTemplate/DT_In.py,
+	DocumentTemplate/DT_InSV.py, DocumentTemplate/DT_Let.py,
+	DocumentTemplate/DT_Raise.py, DocumentTemplate/DT_Return.py,
+	DocumentTemplate/DT_String.py, DocumentTemplate/DT_Try.py,
+	DocumentTemplate/DT_UI.py, DocumentTemplate/DT_Util.py,
+	DocumentTemplate/DT_Var.py, DocumentTemplate/DT_With.py,
+	DocumentTemplate/DTtest.py, DocumentTemplate/DTtestExpr.py,
+	DocumentTemplate/DTtest_basicIn.py,
+	DocumentTemplate/DocumentTemplate.py, DocumentTemplate/VSEval.py,
+	DocumentTemplate/__init__.py, DocumentTemplate/gparse.py,
+	DocumentTemplate/gparse_test.py,
+	DocumentTemplate/pDocumentTemplate.py,
+	DocumentTemplate/ts_regex.py, dtml/error.html, dtml/login.html,
+	dtml/mimepart.html, dtml/textpart.html, dtml/list.html,
+	dtml/vcardpart.html, dtml/mail.html, dtml/template.html,
+	dtml/compose.html, dtml/imagepart.html, dtml/messagepart.html,
+	dtml/sent.html, dtml/about.html, dtml/htmlpart.html,
+	dtml/prefs.html, dtml/addrs.html, dtml/bounce.html,
+	dtml/password.html, dtml/users.html, dtml/forwardaddr.html,
+	images/attach.gif, images/logo.gif, images/PythonPoweredSmall.gif,
+	images/ZopePoweredSmall.gif, images/backgr.gif, images/new.gif,
+	images/bobomail.jpg, images/bobomail.css, images/logo-trans.gif,
+	lib/pipesmtp.py, lib/pop3lib.py, lib/dbm.py, lib/util.py,
+	lib/dumbdbm.py, lib/Message.py, lib/__init__.py,
+	lib/connections.py, lib/logging.py, locale/Makefile, locale/de.po,
+	locale/pygettext.py, locale/de.pox, locale/pygettext-py.diff,
+	locale/messages.pot, locale/pt_BR.pox, locale/pt_BR.po,
+	locale/bobomail.pot, locale/fi.po, locale/fi.pox,
+	locale/de_DE/LC_MESSAGES/bobomail.mo,
+	locale/pt_BR/LC_MESSAGES/bobomail.mo, .snprj/bobomail.1,
+	.snprj/bobomail.ctr, .snprj/bobomail.icl, .snprj/tmp_XX5a21,
+	.snprj/bobomail.f, .snprj/bobomail.iu: Initial checkin
+

@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: Tue Apr  3 03:01:56 2001\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 0.2-1\n"
+
+
+#: ../dtml/vcardpart.html:24
+msgid "Home"
+msgstr ""
+
+#: ../dtml/compose.html:35
+msgid "File"
+msgstr ""
+
+#: ../dtml/vcardpart.html:12
+msgid "Street"
+msgstr ""
+
+#: ../dtml/mail.html:5
+#: ../dtml/mail.html:26
+msgid "Reply to all"
+msgstr ""
+
+#: ../dtml/mail.html:7
+#: ../dtml/mail.html:28
+msgid "Bounce"
+msgstr ""
+
+#: ../dtml/error.html:3
+#: ../dtml/error.html:18
+msgid "Back"
+msgstr ""
+
+#: ../dtml/list.html:102
+msgid "messages"
+msgstr ""
+
+#: ../dtml/template.html:39
+msgid "Addresses"
+msgstr ""
+
+#: ../dtml/addrs.html:26
+#: ../dtml/mail.html:3
+#: ../dtml/mail.html:24
+msgid "Delete"
+msgstr ""
+
+#: ../dtml/error.html:18
+#: ../dtml/error.html:22
+#: ../dtml/login.html:21
+#: ../dtml/login.html:25
+msgid "Login"
+msgstr ""
+
+#: ../dtml/list.html:75
+msgid "[multipart]"
+msgstr ""
+
+#: ../dtml/sent.html:15
+msgid "No problems occured while sending the message"
+msgstr ""
+
+#: ../dtml/addrs.html:14
+#: ../dtml/compose.html:22
+#: ../dtml/messagepart.html:49
+msgid "Bcc"
+msgstr ""
+
+#: ../dtml/login.html:17
+msgid "Userid"
+msgstr ""
+
+#: ../dtml/vcardpart.html:25
+msgid "Work"
+msgstr ""
+
+#: ../dtml/vcardpart.html:16
+msgid "Country"
+msgstr ""
+
+#: ../dtml/sent.html:5
+msgid "Error-message"
+msgstr ""
+
+#: ../dtml/template.html:23
+msgid "About"
+msgstr ""
+
+#: ../dtml/vcardpart.html:30
+msgid "Pager"
+msgstr ""
+
+#: ../dtml/login.html:21
+msgid "Password"
+msgstr ""
+
+#: ../dtml/sent.html:3
+msgid "There were problems with the following recipients"
+msgstr ""
+
+#: ../dtml/sent.html:5
+msgid "Address"
+msgstr ""
+
+#: ../dtml/list.html:58
+msgid "Size"
+msgstr ""
+
+#: ../dtml/template.html:36
+msgid "Mailbox"
+msgstr ""
+
+#: ../dtml/imagepart.html:1
+#: ../dtml/imagepart.html:4
+msgid "Picture"
+msgstr ""
+
+#: ../dtml/list.html:102
+#: ../dtml/list.html:103
+msgid "Delete selected messages"
+msgstr ""
+
+#: ../dtml/addrs.html:26
+#: ../dtml/addrs.html:32
+msgid "Send mail"
+msgstr ""
+
+#: ../dtml/about.html:19
+msgid "Distributed under GNU General Public License"
+msgstr ""
+
+#: ../dtml/messagepart.html:7
+msgid "Mailer"
+msgstr ""
+
+#: ../dtml/addrs.html:63
+#: ../dtml/addrs.html:69
+#: ../dtml/messagepart.html:28
+#: ../dtml/vcardpart.html:35
+#: ../dtml/vcardpart.html:45
+msgid "Add to address book"
+msgstr ""
+
+#: ../dtml/addrs.html:16
+#: ../dtml/addrs.html:63
+#: ../dtml/vcardpart.html:32
+msgid "Email"
+msgstr ""
+
+#: ../dtml/about.html:4
+msgid "Homepage"
+msgstr ""
+
+#: ../dtml/list.html:21
+msgid "Click on the column header for the sort order. And again to reverse."
+msgstr ""
+
+#: ../dtml/mail.html:4
+#: ../dtml/mail.html:25
+msgid "Reply"
+msgstr ""
+
+#: ../dtml/login.html:4
+msgid "Please authenticate yourself"
+msgstr ""
+
+#: ../dtml/about.html:8
+msgid "Mailing list"
+msgstr ""
+
+#: ../dtml/list.html:109
+msgid "Sorry. You have no mail :-("
+msgstr ""
+
+#: ../dtml/prefs.html:15
+msgid "Full name:"
+msgstr ""
+
+#: ../dtml/vcardpart.html:15
+msgid "State"
+msgstr ""
+
+#: ../dtml/addrs.html:12
+#: ../dtml/bounce.html:15
+#: ../dtml/compose.html:11
+#: ../dtml/messagepart.html:33
+msgid "To"
+msgstr ""
+
+#: ../dtml/list.html:94
+msgid "Next"
+msgstr ""
+
+#: ../dtml/bounce.html:15
+#: ../dtml/bounce.html:19
+msgid "Send"
+msgstr ""
+
+#: ../dtml/mimepart.html:9
+msgid "Click to download"
+msgstr ""
+
+#: ../dtml/list.html:69
+#: ../dtml/list.html:72
+#: ../dtml/messagepart.html:61
+#: ../dtml/messagepart.html:64
+msgid "(no subject)"
+msgstr ""
+
+#: ../dtml/prefs.html:28
+msgid "View attached images inside the page"
+msgstr ""
+
+#: ../dtml/template.html:43
+msgid "Preferences"
+msgstr ""
+
+#: ../dtml/messagepart.html:24
+msgid "From"
+msgstr ""
+
+#: ../mimeviewer.py:72
+#: ../mimeviewer.py:75
+msgid "(no body)"
+msgstr ""
+
+#: ../dtml/vcardpart.html:14
+msgid "City"
+msgstr ""
+
+#: ../dtml/compose.html:26
+#: ../dtml/list.html:45
+#: ../dtml/messagepart.html:61
+msgid "Subject"
+msgstr ""
+
+#: ../dtml/about.html:6
+msgid "Bug tracking"
+msgstr ""
+
+#: ../dtml/mail.html:17
+msgid "View raw message"
+msgstr ""
+
+#: ../dtml/about.html:20
+msgid "for details."
+msgstr ""
+
+#: ../dtml/about.html:5
+msgid "Project-Page"
+msgstr ""
+
+#: ../dtml/addrs.html:13
+#: ../dtml/compose.html:18
+#: ../dtml/messagepart.html:39
+msgid "Cc"
+msgstr ""
+
+#: ../dtml/compose.html:35
+#: ../dtml/compose.html:39
+msgid "Send message"
+msgstr ""
+
+#: ../dtml/template.html:26
+msgid "Help"
+msgstr ""
+
+#: ../dtml/sent.html:5
+msgid "Code"
+msgstr ""
+
+#: ../dtml/list.html:31
+msgid "Previous"
+msgstr ""
+
+#: ../dtml/vcardpart.html:22
+msgid "Telephone"
+msgstr ""
+
+#: ../dtml/vcardpart.html:26
+msgid "Mobile"
+msgstr ""
+
+#: ../dtml/vcardpart.html:35
+msgid "URL"
+msgstr ""
+
+#: ../dtml/vcardpart.html:13
+msgid "ZIP"
+msgstr ""
+
+#: ../dtml/list.html:50
+msgid "Sender"
+msgstr ""
+
+#: ../dtml/prefs.html:32
+#: ../dtml/prefs.html:46
+msgid "Save changes"
+msgstr ""
+
+#: ../dtml/list.html:54
+#: ../dtml/messagepart.html:16
+msgid "Date"
+msgstr ""
+
+#: ../dtml/template.html:47
+msgid "Logout"
+msgstr ""
+
+#: ../dtml/login.html:12
+msgid "Host"
+msgstr ""
+
+#: ../dtml/template.html:33
+msgid "New message"
+msgstr ""
+
+#: ../dtml/mimepart.html:6
+msgid "MIME-type"
+msgstr ""
+
+#: ../dtml/about.html:20
+msgid "Look at"
+msgstr ""
+
+#: ../dtml/prefs.html:22
+msgid "Signature:"
+msgstr ""
+
+#: ../dtml/sent.html:20
+msgid "Return to inbox"
+msgstr ""
+
+#: ../dtml/list.html:69
+msgid "[new]"
+msgstr ""
+
+#: ../dtml/vcardpart.html:29
+msgid "Fax"
+msgstr ""
+
+#: ../dtml/mail.html:15
+msgid "View raw headers"
+msgstr ""
+
+#: ../dtml/mail.html:6
+#: ../dtml/mail.html:27
+msgid "Forward"
+msgstr ""
+
+#: ../dtml/error.html:3
+msgid "Unfortunately, an error occured"
+msgstr ""
+
+#: ../dtml/mimepart.html:5
+msgid "Attachment"
+msgstr ""
+
+#: ../dtml/list.html:20
+msgid "To reply click on the sender and click on the subject to read."
+msgstr ""
+
+#: ../dtml/mimepart.html:7
+msgid "Filename"
+msgstr ""
+
+#: ../dtml/about.html:10
+msgid "You are using BoboMail version"
+msgstr ""
+
+#: ../dtml/prefs.html:32
+msgid "Messages per page:"
+msgstr ""
+
+#: ../dtml/list.html:75
+#: ../dtml/list.html:82
+msgid "(no date)"
+msgstr ""
+
+#: ../dtml/addrs.html:15
+#: ../dtml/addrs.html:60
+#: ../dtml/vcardpart.html:11
+msgid "Name"
+msgstr ""
+
+#: ../dtml/vcardpart.html:10
+msgid "Title"
+msgstr ""
+
+#: ../dtml/about.html:7
+msgid "Patch manager"
+msgstr ""
+

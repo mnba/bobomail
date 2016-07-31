@@ -1,0 +1,91 @@
+<!--<h3>
+  [
+  <a href="Delete?index:int=<dtml-var index>"><dtml-gt>Delete</dtml-gt></a> |
+  <a href="Reply?index:int=<dtml-var index>"><dtml-gt>Reply</dtml-gt></a> |
+  <a href="ReplyAll?index:int=<dtml-var index>"><dtml-gt>Reply to all</dtml-gt></a> |
+  <a href="Forward?index:int=<dtml-var index>"><dtml-gt>Forward</dtml-gt></a> |
+  <a href="Bounce?index:int=<dtml-var index>"><dtml-gt>Bounce</dtml-gt></a>
+  ]
+</h3>-->
+
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#45B4B4" align="center" width="100%">
+        <tr align="center"> 
+          <td width="20%"> 
+		    <a href="Delete?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Delete</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td width="20%">
+	        <a href="Reply?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Reply</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td width="20%"> 
+         	<a href="ReplyAll?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Reply to all</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td width="20%">
+            <a href="Forward?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Forward</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+		  <td width="20%">
+            <a href="Bounce?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Bounce</dtml-gt></font></a> 
+          </td>
+        </tr>
+      </table>
+
+	<dtml-var message>
+	  <br>
+
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#45B4B4" align="center" width="100%">
+        <tr align="center"> 
+          <td  width="20%"> 
+		    <a href="Delete?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Delete</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td  width="20%">
+	        <a href="Reply?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Reply</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td width="20%"> 
+         	<a href="ReplyAll?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Reply to all</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td width="20%">
+            <a href="Forward?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Forward</dtml-gt></font></a> 
+          </td>
+          <td>|</td>
+          <td width="20%">
+            <a href="Bounce?index:int=<dtml-var index>&folder=<dtml-var folder>" class="ssb"><font color="#FFFFFF"><dtml-gt>Bounce</dtml-gt></font></a> 
+          </td>
+        </tr>
+      </table>
+
+
+	  <div align="center">
+      <dtml-if supports_folders>
+      <form action="Action">
+         <input type="hidden" name="index:int" value="<dtml-var index>">
+         <input type="hidden" name="folder" value="<dtml-var folder>">
+          <select name="action">
+            <option value="move"><dtml-gt>Move</dtml-gt>
+            <option value="copy"><dtml-gt>Copy</dtml-gt>
+          </select>&nbsp;
+          <dtml-gt>message to</dtml-gt>
+          <select name="destination">  
+           <dtml-in folders>
+           <dtml-if expr="_['sequence-item']!=folder">
+           <option value="<dtml-var sequence-item>"><dtml-var sequence-item>
+            </dtml-if>
+           </dtml-in>
+         </select>&nbsp;
+          <input type="submit" value="<dtml-gt>Ok</dtml-gt>">
+       </form>
+	   </dtml-if>
+
+       <br>
+        <tt>
+		  <a href="ViewRaw?index:int=<dtml-var index>&headers:int=1&folder=<dtml-var folder>" target="_blank"><font
+color="gray" size="-1"><dtml-gt>View raw headers</dtml-gt></font></a>
+	      |	<a href="ViewRaw?index:int=<dtml-var index>&folder=<dtml-var folder>" target="_blank"><font color="gray"
+size="-1"><dtml-gt>View raw message</dtml-gt></font></a>
+		</tt>
+      </div>

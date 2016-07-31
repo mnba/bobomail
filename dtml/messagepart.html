@@ -1,0 +1,72 @@
+
+  <dtml-with msg>
+  <table border="0" bgcolor="#eeeeee" width="100%">
+    <dtml-if UserAgent>
+	<tr>
+	  <td align="right" class="ss">
+			<b><dtml-gt>Mailer</dtml-gt>:</b>
+	  </td>
+	  <td class="ss">
+        <dtml-var UserAgent html_quote>
+      </td>
+    </tr>
+    </dtml-if>
+    <tr>
+      <td align="right" class="ss">
+        <b><dtml-gt>Date</dtml-gt>:</b>
+      </td>
+      <td class="ss">
+        <dtml-var DateStr html_quote>
+      </td>
+    </tr>
+    <tr>
+      <td align="right" class="ss">
+        <b><dtml-gt>From</dtml-gt>:</b>
+      </td>
+      <td class="ss">
+          <dtml-var Sender html_quote null="(Anonymous)"> <font size="-1">
+		  [<a href="../AddrBook/Add?username=<dtml-var FromName url_quote>&email=<dtml-var FromAddr>"><dtml-gt>Add to address book</dtml-gt></a>]</font>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td align="right" class="ss">
+        <b><dtml-gt>To</dtml-gt>:</b>
+      </td>
+      <td class="ss">
+        <dtml-var ToList html_quote null="">
+      </td>
+    </tr>
+    <dtml-if CcAddr>
+    <tr  valign="top">
+      <td align="right" class="ss">
+        <b><dtml-gt>Cc</dtml-gt>:</b>
+      </td>
+      <td>
+        <dtml-var CcList html_quote null="">  
+      </td>
+    </tr>
+    </dtml-if>
+    <dtml-if Bcc>
+    <tr  valign="top">
+      <td align="right" class="ss">
+        <b><dtml-gt>Bcc</dtml-gt>:</b>
+      </td>
+      <td class="ss">
+        <dtml-var BccList html_quote null="">  
+      </td>
+    </tr>
+    </dtml-if>
+    <tr>
+      <td align="right" class="ss">
+        <b><dtml-gt>Subject</dtml-gt>:</b>
+      </td>
+      <td class="ss">
+        <dtml-var Subject html_quote null="<dtml-gt>(no subject)</dtml-gt>">
+      </td>
+    </tr> 
+
+  </table>
+  </dtml-with>
+
+  <br>
+  <dtml-var body>

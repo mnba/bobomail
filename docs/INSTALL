@@ -1,0 +1,56 @@
+Installing BoboMail
+
+ +----------------------------------WARNING------------------------------------+
+ | BoboMail is currently in development and may be not usefull for end users.  |
+ +-----------------------------------------------------------------------------+
+
+So, if you don't got scared, try the following steps:
+
+1. The first thing you need is Python - the best programming language on earth.
+   You can download Python from http://www.python.org. But probably it is
+   bundled with your distribution if you are a Linux user.
+
+2. Okay is Python installed? Then copy all the stuff into a directory, e.g.
+   /usr/local/bobomail
+
+3. To customize BoboMail and get it working, look into bobomailrc.py and change
+   it for your needs (look for smtp_host, pop3_host, auth_host, domain, etc).
+
+4. Either change the imagedir variable in bobomailrc or add something like
+      Alias /bobomail/ "/usr/local/bobomail/images/"
+   to your httpd.conf (for Apache servers)
+
+5. Do a chmod 700 to the var-directory or chown it to the user and group for 
+   cgi-scripts (look into httpd.conf for User and Group). Often it is 
+   nobody.nobody (on RedHat) or wwwrun.nogroup (on SuSE). This
+   is neccessary to store the logs files and the session data for the
+   authenticated users. When you get a Zope-Error with permission denied,
+   you probably did something wrong here.
+
+6. type "make install" in the app dir. This will compile all Python files to
+   speed up BoboMail.
+
+7. Move bobomail.cgi to the cgi-bin directory of your webserver and edit
+   the marked line in it.
+
+8. Test it: Go to the URL http://localhost/cgi-bin/bobomail.cgi with your
+   favorite web-browser and have fun.
+
+You don't have a Apache? Okay, other servers work too, but you might try
+BoboMailHTTPD.py which is even faster. The parameter -d suppresses the 
+message output and will write it to a log file. You can run the server in
+background. It will listen on port 9673 (change bobomailrc.httpd_port if
+you like).
+
+If you have a RedHat 6.2 system with Zope installed you can delete the
+ZPublisher and ZTemplates directory. This will speedup BoboMail because
+the already installed components make use of C modules.
+
+
+Addendum.
+
+You may find it necessary to change the line reading
+  #!/usr/bin/env python
+to
+  #!/usr/local/bin/python
+in bobomail.cgi

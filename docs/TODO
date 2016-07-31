@@ -1,0 +1,39 @@
+Todo list for 1.0
+
+* test existing features with all kinds of mails.
+
+* handle more exceptions and errors
+
+* remove path from filename on attachments (with some browsers..)
+
+* improve speed! (using C module?)
+
+* get Unix-mailboxes/spool-files fully working
+
+* let user choose language (through HTTP_ACCEPT_LANGUAGE?)
+
+* take care of security (pages should expire etc)
+
+* handle multiple domains (partially done with patches)
+
+* import ZopeHTTPServer instead of patching it
+
+* make better documentation
+
+* README.multiple-domains, README.multiple-installations
+
+* MIME-forward, priorities, Reply-To and as an option (-> preferences)
+
+* provide install script
+
+* make code thread-safe
+
+* more i18n and l10n (date fields etc) 
+
+* support unicode with Python >= 1.6
+
+* look for XXX and TODO in source
+
+After 1.0
+
+* make a Zope product

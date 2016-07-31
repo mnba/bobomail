@@ -1,0 +1,5 @@
+
+If you are using qmail, make sure you edit /etc/mail.conf so you
+can use "sendmail -bs" to send mail without worrying about setting up
+local relaying.
+                                  -- Jonathan Walther <krooger@debian.org>

@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/tr/REC-html40/loose.dtd">
+<html>
+ <head>
+    <link rel="stylesheet" href="images//bobomail.css">
+    <style><!--
+      A {text-decoration: none}
+      a:hover { text-decoration: underline;  color: #cc0000}
+      -->
+    </style>
+    <meta http-equiv="pragma" content="no-cache">
+    <title>BoboMail: Homepage</title>
+ </head>
+
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff">
+
+   <table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tr>
+    <td width="10" bgcolor="#389090" background="images//backgr.gif" align="center">&nbsp;</td>
+    <td  bgcolor="#389090" background="images//backgr.gif" valign="top" width="165">
+      <img src="images//logo-trans.gif">
+    </td>
+    <td bgcolor="#389090" background="images//backgr.gif" valign="TOP" align="left" width="100%">
+      <h2><font color="white">Homepage</font></h2>
+    </td>
+
+    <td width="10" bgcolor="#389090" background="images//backgr.gif" align="right" valign="bottom"><img src="images//border1.gif" width="14" HEIGHT="20" border="0"></td>
+   </tr>
+
+   <tr>
+    <td width="10" bgcolor="#389090" background="images//backgr.gif">&nbsp;</td>
+
+    <td width="150" bgcolor="#389090" background="images//backgr.gif" valign=TOP>
+
+                            
+    <br><p>
+	<a style="text-decoration: none" href="http://sourceforge.net/project/?group_id=4938"><font color="white" size="-1" face="Arial, Helvetica, Sans Serif">Project page</font></a><br>
+	<a style="text-decoration: none" href="http://sourceforge.net/bugs/?group_id=4938"><font color="white" size="-1" face="Arial, Helvetica, Sans Serif">Bug tracking</font></a><br>
+	<a style="text-decoration: none" href="http://sourceforge.net/patch/?group_id=4938"><font color="white" size="-1" face="Arial, Helvetica, Sans Serif">Patch manager</font></a><br>
+	<a href="http://sourceforge.net/mail/?group_id=4938"><font color="white" size="-1" face="Arial, Helvetica, Sans Serif">Mailing list</font></a><br>
+	<br><br><br>
+	<a style="text-decoration: none" href="images/shot1.gif"><font color="white" size="-1" face="Arial, Helvetica, Sans Serif">Screenshot 1</font></a><br>
+	<a style="text-decoration: none" href="images/shot2.gif"><font color="white" size="-1"face="Arial, Helvetica, Sans Serif">Screenshot 2</font></a><br><br>
+        <!--<a style="text-decoration: none" href="http://bobomail.sourceforge.net/cgi-bin/bobomail.cgi"><font size="-1" color="white" face="Arial, Helvetica, Sans Serif"><i><b>Test DEMO!</b></i></font></a><br><br>-->
+	<a style="text-decoration: none" href="http://sourceforge.net/project/showfiles.php?group_id=4938"><font color="white" face="Arial, Helvetica, Sans Serif">Download</font></a><br><br>
+        <a style="text-decoration: none" href="http://cvs.sourceforge.net/cvstarballs/bobomail-cvsroot.tar.gz"><font size="-2" color="white">Daily CVS Snapshot</font></a>
+	</br></p>
+
+           
+    </td>
+    <td valign="top" rowspan="3">
+	   <table border="0" cellpadding="10"><tr><td>
+	<h4><b><a href="#README">README</a> | <a href="#INSTALL">INSTALL</a> | <a href="#PROBLEMS">PROBLEMS</a> | <a href="#TODO">TODO</a> | <a href="#ChangeLog">ChangeLog</a> | <a href="#THANKS">THANKS</a> | <a href="#CREDITS">CREDITS</a> <hr noshade></b></h4>
+<h1 align="center"><font color="darkblue">BoboMail 0.6pre1</font><br><img alt="BoboMail" src="/bobomail/images/bobomail.jpg"></h1>
+
+<a name="README"></a><h2>About BoboMail</h2>
+
+<p>
+	BoboMail is a so called webmail application, which provides mail access 
+through a web interface. 
+</p>
+
+<p>
+	It is distributed under the GNU GPL. See COPYING in the package
+or go to <a href="http://www.gnu.org">http://www.gnu.org</a> for details.
+</p>
+
+<p>
+	Current features:
+</p>
+
+<ul>
+	<li> read, write, reply, forward, delete and bounce messages
+	<li> send and receive attachments
+	<li> decodes quoted-printable, base64 and uuencoded
+	<li> handles HTML-mails properly (with inline images!)
+	<li> does not need Javascript
+	<li> direct support for the following MIME types:
+  message/rfc822, message/delivery-status, multipart/alternative,
+  multipart/mixed, multipart/report, multipart/related, 
+  multipart/digest, text/plain, text/html, text/x-vcard, image/jpeg, 
+  text/rfc822-headers, image/png, image/x-xpixmap, image/gif
+	<li> works with POP3-servers and partially IMAP4 (spool-files under development)
+	<li> easy to modify and customize through HTML-templates
+	<li> modular design provides easy interface for other authentication
+  methods and mail protocols
+	<li> provides optionally its own fast multithreading webserver (BoboMailHTTPD)
+	<li> multi-lingual support (i18n) - currently English, Brazilian Portuguese,
+  Finish, Spanish and German
+	<li> and it's 100% Python :-)
+</ul>
+
+<p>
+	The first version of BoboMail was used for about a year and a half in the 
+intranet of the Computer Club Ostfriesland (one of Germany's largest computer
+clubs, see <a href="http://www.cco-ev.de">http://www.cco-ev.de</a> if you understand German). I wrote my own
+webmailer, because at that time only some Perl scripts were available,
+which were not easy to customize (e.g. German interface).
+</p>
+
+<p>
+	BTW: The name comes from Bobo - the former name of ZPublisher (the cgi
+framework I use). If you have a better/cooler idea for a name let me know!
+</p>
+
+<p>
+	I hope you will find BoboMail usefull. Please send complaints (e.g. spelling 
+mistakes), criticism, security advices, suggestions, praises and everything 
+else to <a href="mailto:ich@henning-schroeder.de">ich@henning-schroeder.de</a> or visit me (Henning) on my personal webpage
+at <a href="http://www.henning-schroeder.de/en">http://www.henning-schroeder.de/en</a>
+ 
+Important acknowledgement:
+This product includes software developed by Digital Creations
+for use in the Z Object Publishing Environment (<a href="htt://www.zope.org">htt://www.zope.org</a>).
+</p>
+
+<p>
+	The BoboMail distribution contains Zope's ZPublisher and ZTemplates. These
+compoments underly the Zope Public License (ZPL). They are packages with
+BoboMail for easier installation.
+ 
+BoboMail is hosted at Sourceforge (<a href="http://sourceforge.net">http://sourceforge.net</a>). If you are
+interested in BoboMail development please visit the its webpage at
+<a href="http://bobomail.sourceforge.net">http://bobomail.sourceforge.net</a>
+ 
+Besides I want to make BoboMail even more modular so that my stuff can
+be used for a mailinglist archiver or a web-forum.
+ 
+Attention: I really would like to know where you will use BoboMail. Please
+tell me your success stories :-)
+</p>
+
+<p>
+	
+</p>
+
+<br><a name="INSTALL"></a><h2>Installing BoboMail</h2>
+
+<pre> +----------------------------------WARNING------------------------------------+
+ | BoboMail is currently in development and may be not usefull for end users.  |
+ +-----------------------------------------------------------------------------+</pre><p>
+	So, if you don't got scared, try the following steps:
+</p>
+
+<p>
+	1. The first thing you need is Python - the best programming language on earth.
+   You can download Python from <a href="http://www.python.org.">http://www.python.org.</a> But probably it is
+   bundled with your distribution if you are a Linux user.
+</p>
+
+<p>
+	2. Okay is Python installed? Then copy all the stuff into a directory, e.g.
+   /usr/local/bobomail
+</p>
+
+<p>
+	3. To customize BoboMail and get it working, look into bobomailrc.py and change
+   it for your needs (look for smtp_host, pop3_host, auth_host, domain, etc).
+</p>
+
+<p>
+	4. Either change the imagedir variable in bobomailrc or add something like
+      Alias /bobomail/ "/usr/local/bobomail/images/"
+   to your httpd.conf (for Apache servers)
+</p>
+
+<p>
+	5. Do a chmod 700 to the var-directory or chown it to the user and group for 
+   cgi-scripts (look into httpd.conf for User and Group). Often it is 
+   nobody.nobody (on RedHat) or wwwrun.nogroup (on SuSE). This
+   is neccessary to store the logs files and the session data for the
+   authenticated users. When you get a Zope-Error with permission denied,
+   you probably did something wrong here.
+</p>
+
+<p>
+	6. type "make install" in the app dir. This will compile all Python files to
+   speed up BoboMail.
+</p>
+
+<p>
+	7. Move bobomail.cgi to the cgi-bin directory of your webserver and edit
+   the marked line in it.
+</p>
+
+<p>
+	8. Test it: Go to the URL <a href="http://localhost/cgi-bin/bobomail.cgi">http://localhost/cgi-bin/bobomail.cgi</a> with your
+   favorite web-browser and have fun.
+</p>
+
+<p>
+	You don't have a Apache? Okay, other servers work too, but you might try
+BoboMailHTTPD.py which is even faster. The parameter -d suppresses the 
+message output and will write it to a log file. You can run the server in
+background. It will listen on port 9673 (change bobomailrc.httpd_port if
+you like).
+</p>
+
+<p>
+	If you have a RedHat 6.2 system with Zope installed you can delete the
+ZPublisher and ZTemplates directory. This will speedup BoboMail because
+the already installed components make use of C modules.
+ 
+Addendum.
+</p>
+
+<p>
+	You may find it necessary to change the line reading
+  #!/usr/bin/env python
+to
+  #!/usr/local/bin/python
+in bobomail.cgi
+
+</p>
+
+<br><a name="PROBLEMS"></a><p>
+	Problems
+ 
+On some systems an authentication error occured although the userid and
+the password were right. This was caused by a buggy dumbdbm.py which was
+shipped with Python 1.5.2. This distribution new contains a newer version.
+ 
+Some people tried to run BoboMail with Python 1.5.1 or lower. Therefore you 
+have to patch ZPublisher. (Not really recommended)
+</p>
+
+<pre> In Publish.py replace
+   outputBody=getattr(response, 'outputBody', None)
+ with
+   try: outputBody=getattr(response, 'outputBody')
+   except: outputBody=None
+ and
+   error_hook=getattr(module,'zpublisher_exception_hook', None)
+ with
+   try: error_hook=getattr(module,'zpublisher_exception_hook')
+   except: error_hook=None
+ 
+There was one problem with the permissions in release 0.3: </pre><pre> The error message "module main not found" means that the
+ webserver can't read the file main.py. chmod +r should fix this.
+ 
+If you have any other problems, mail me and I will try to help you.
+ 
+I have testetd BoboMail on the following system:</pre><ul>
+	<li> RedHat 6.2
+	<li> SuSE 6.0
+	<li> Linux 2.2.15
+	<li> Python 1.5.2
+	<li> Apache 1.3.11, Apache 1.3.12
+	<li> Mozilla M15/
+   Netscape Navigator 4.7
+	<li> OpenBSD 2.7
+</ul>
+
+<p>
+	If you see Zope-Error messages look into the html source for a Python
+traceback to see what went wrong (e.g. import errors occure when the 
+directories are wrong). If you don't understand them mail me the page.
+
+</p>
+
+<br><a name="TODO"></a><h2>Todo list for 1.0</h2>
+
+<ul>
+	<li> test existing features with all kinds of mails.
+	<li> handle more exceptions and errors
+	<li> remove path from filename on attachments (with some browsers..)
+	<li> improve speed! (using C module?)
+	<li> get Unix-mailboxes/spool-files fully working
+	<li> let user choose language (through HTTP_ACCEPT_LANGUAGE?)
+	<li> take care of security (pages should expire etc)
+	<li> handle multiple domains (partially done with patches)
+	<li> import ZopeHTTPServer instead of patching it
+	<li> make better documentation
+	<li> README.multiple-domains, README.multiple-installations
+	<li> MIME-forward, priorities, Reply-To and as an option (-&gt; preferences)
+	<li> provide install script
+	<li> make code thread-safe
+	<li> more i18n and l10n (date fields etc)
+	<li> support unicode with Python &gt;= 1.6
+	<li> look for XXX and TODO in source
+</ul>
+
+<p>
+	After 1.0
+</p>
+
+<ul>
+	<li> make a Zope product
+</ul>
+<br><a name="ChangeLog"></a><h2>Change-log</h2>
+
+<p>
+	0.6pre1
+</p>
+
+<ul>
+	<li> with the help from Ken Causey the annoying first-login-bug is fixed now :-)
+	<li> IMAP support for uw-imapd, expects additional folders in $HOME/Mail
+	<li> now runs with Python 2.x without problems
+	<li> new look, using nicer template inspired by zope.org
+	<li> and some other small bug fixes (see cvs if you like)
+</ul>
+
+<p>
+	0.5
+</p>
+
+<ul>
+	<li> documented the source a little bit for interested developers
+	<li> now if you enable multiple domains you can limit it to special hosts
+	<li> fixed various messages parsing bugs (e.g. now accepts mails with attachment but without body and always recognizes to filename of an attachment)
+	<li> some visual improvements to the templates (more to come in the next release :-))
+</ul>
+
+<p>
+	0.4-7
+</p>
+
+<ul>
+	<li> Spanish translation (thanks to Diego Brouard Martín)
+  
+  * new session management
+</ul>
+
+<p>
+	0.4-6
+</p>
+
+<ul>
+	<li> seperated preferences, adressbook and mailbox into different classes
+	<li> two fixes in sendmail.py (thanks to Georg Bauer)
+	<li> Finish translation (thanks to Markku Yli-Pentilä)
+	<li> some important fixes to mimeviewer.py and some other files
+    (sorry lost mail with sender - nevertheless thanks!)
+	
+0.4-5:
+	<li> added bouncing
+	<li> even more clean-ups and modularisation but more to come
+	<li> improved vcard-support
+	<li> some notes in docs/README.Security about https
+</ul>
+
+<p>
+	0.4-4:
+</p>
+
+<ul>
+	<li> implemented simple adressbook
+	<li> changed design of templates a litte bit, more use of css
+	<li> some code clean-ups and minor fixes
+</ul>
+
+<p>
+	0.4-2:
+</p>
+
+<ul>
+	<li> more modularisation
+	<li> maxium messages per page in list-view (customizeable via prefs)
+	<li> named anchor in html-mails now don't cause errors any more
+	<li> complex vcards are now skipped instead of generating errors
+	<li> now works with Python version &gt;= 1.6
+	<li> Brazilian Portuguese (pt_BR) translation (thanks to Cristiano)
+	<li> tollerates multi-part messages without end-marker
+	<li> BoboMailHTTPD and PCGI work again :-)
+	<li> "make install" compiles all files to speed up BoboMail
+</ul>
+
+<p>
+	0.4:
+</p>
+
+<ul>
+	<li> message size instead of lines shown
+	<li> view messages and headers in raw format
+	<li> new mails are indicated through a nice icon
+  
+  * preferences: username, signature, view images inline
+	<li> replies now with In-Reply-To header for intelligent mailers with
+    thread-view
+	<li> the username will automatically be determined if auth_host == "localhost"
+	<li> send mails via pipes
+	<li> sort order visible by header, reverse sort order, order stored in prefs
+	<li> usability: status messages are now displayed in the list view
+	<li> some fixes (filenames with path in attachment, authentication problem
+    caused by a buggy dumbdbm.py, Y2K issues, deleting first message)
+	<li> simple IMAP4 support (working but not much tested)
+	<li> mailtos in HTML messages are converted
+	<li> open new window on message links
+	<li> word-wrapping in text messages
+	<li> show all recipients, reply to all
+</ul>
+
+<p>
+	0.3-1: small bugfix-release (ServicePack 1, hehe ;-))
+</p>
+
+<ul>
+	<li> additional notice about Zope components in documentation
+	<li> updated TODO
+	<li> reversed ChangeLog order
+	<li> fixed distribution problems with permissions/file access
+	<li> fixed attachment bug in sendmail.py (thanks to Guillem)
+	<li> attached multiple pop-server patch from homepage demo in distribution
+</ul>
+
+<p>
+	0.3: first appearance on Sourceforge
+</p>
+
+<ul>
+	<li> renamed project from "DogMail" to "BoboMail"
+	<li> added i18n-support with German translations
+	<li> some bug fixes
+	<li> disabled some untested or partially implemented functions for release
+</ul>
+
+<p>
+	0.2: complete rewrite of 0.1 with lots of new features
+</p>
+
+<ul>
+	<li> very improved MIME handling
+	<li> extensive usage of DocumentTemplates
+	<li> more modular and extendable
+</ul>
+
+<p>
+	0.1: never released to public
+</p>
+
+<ul>
+	<li> simple mail facilities
+	<li> bad hacked MIME support
+</ul>
+
+<p>
+	
+</p>
+
+<br><a name="THANKS"></a><h2>Thanks to</h2>
+
+<ul>
+	<li> Ian Bicking (various great patches and improvements)
+	<li> Jonathan Walther (suggestions, portablitiy on BSD)
+	<li> Guillem Mateos (bug reports and fixes)
+	<li> Cristiano Reis Monteiro (Brazilian Portuguese translation)
+	<li> Markku Yli-Pentilä (Finish translation)
+	<li> Diego Brouard Martín (Spanish translation)
+	<li> Ken Causey (various important fixes of annoying bugs)
+</ul>
+<br><a name="CREDITS"></a><h2>Credits go to...</h2>
+
+<ul>
+	<li> Digital Creations for ZPublisher and ZTemplates (<a href="http://www.zope.org">http://www.zope.org</a>)
+	<li> Barry Warsaw for pygettext.py (<a href="mailto:bwarsaw@python.org">bwarsaw@python.org</a>)
+	<li> Peter Funk for fintl.py (<a href="mailto:pf@artcom-gmbh.de">pf@artcom-gmbh.de</a>)
+	<li> and of course Guido van Rossum for Python (<a href="http://www.python.org">http://www.python.org</a>)
+</ul>
+<br></td></tr></table>
+    </td>
+    <td width="10" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10" bgcolor="#389090" background="images//backgr.gif"align="center">&nbsp;</td>
+    <td width="150" bgcolor="#389090" background="images//backgr.gif" align="right" valign="bottom"><img src="images//border2.gif" width="142" height="20" border="0" ALT=""></td>
+    <!--<td align="center">&nbsp;</td>-->
+    <td width="10" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td width="150"><!-- Below -->&nbsp;</td>
+    <!--<td>&nbsp;</td>-->
+    <td width="10">&nbsp;</td>
+  </tr>
+ </table>
+ <!-- Bottom -->
+ 
+</BODY>
+</HTML>
+

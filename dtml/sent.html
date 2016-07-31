@@ -1,0 +1,22 @@
+
+		  <dtml-if failed>
+			<h3><dtml-gt>There were problems with the following recipients</dtml-gt>:</h3>
+			<table align="center" width="100%">
+              <tr><td><dtml-gt>Address</dtml-gt></td><td><dtml-gt>Code</dtml-gt></td><td><dtml-gt>Error-message</dtml-gt></td></tr>
+			<dtml-in failed>
+			  <tr>
+                  <tr><dtml-var email><td>
+				  <td><dtml-var code></td>
+		          <td><dtml-var reason></td>
+              </tr>
+			</dtml-in>
+            </table>
+          <dtml-else>
+	        <h3><dtml-gt>No problems occured while sending the message</dtml-gt> :-)</h3>
+		  </dtml-if>
+
+		  <br><br><br>
+		  <div align="center">
+             <a href="List"><dtml-gt>Return to inbox</dtml-gt></a>
+          </div>
+		 
