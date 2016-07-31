@@ -23,4 +23,8 @@ But seems I have finally win the bug, at least I hope so.
 
 Many other notes on patches for modern platforms are available in _Desc-MA.txt file.
 
+URL to open on local machine:  http://localhost:9673/
+
+---
+
  -Minas Abrahamyan 2016-07-31
